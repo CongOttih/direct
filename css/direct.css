@@ -14,6 +14,10 @@ html{
   animation-iteration-count: infinite;
 }
 
+body{
+  padding: 100px;
+}
+
 @keyframes progress {
   0% {background-color: black;}
   2%  {background-color: #222222;}
