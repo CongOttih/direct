@@ -3,20 +3,28 @@ var elements = document.getElementsByClassName( "column ");
 
 // Declare a loop variable
 var i;
-var j;
 
 // List View
 function listView() {
   for (i = 0; i < elements.length; i++) {
-    elements[i].style.color = "black";
+    elements[i].style.color = "transparent";
+    elements[i].style.outline = "transparent";
   }
 }
 
 // Grid View
 function gridView() {
   for (i = 0; i < elements.length; i++) {
-    elements[i].style.color = "white";
+    elements[i].style.color = "black";
+    elements[i].style.outline = "solid 2px black";
+  }
+}
 
+// White View
+function whiteView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.color = "white";
+    elements[i].style.outline = "solid 2px white";
   }
 }
 

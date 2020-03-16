@@ -5,7 +5,7 @@
 html{
   font-family: 'Montserrat', sans-serif;
   background-color: #FFF;
-  color: black;
+  color: transparent;
 
   height: 75%;
   width: 100%;
@@ -52,7 +52,7 @@ body{
   padding: 20px;
   font-size: 24px;
   text-align: center;
-  outline: 2px solid black;
+  outline: 2px solid progress;
   animation-name: progress;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -75,7 +75,7 @@ body{
 }
 
 .btn.active {
-  color: #333;
+  color: transparent;
   font-size: 30px;
   outline: 2px solid progress;
   animation-name: progress;
@@ -87,6 +87,7 @@ body{
   display: flex; 
   justify-content: center;
   flex-direction: row;
+  width: 100%;
 }
 
 #left{
@@ -106,5 +107,5 @@ body{
 }
 
 a{
-  color: black;
+  color: transparent;
 }
