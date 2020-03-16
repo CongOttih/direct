@@ -83,6 +83,10 @@ body{
   animation-iteration-count: infinite;
 }
 
+.size{
+  width: 200px;
+}
+
 #btnContainer{
   display: flex; 
   justify-content: center;
