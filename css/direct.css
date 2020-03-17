@@ -77,8 +77,6 @@ body{
 .btn.active {
   color: transparent;
   font-size: 30px;
-  height: 100px;
-  width: 100px;
   outline: 2px solid progress;
   animation-name: progress;
   animation-duration: 4s;
