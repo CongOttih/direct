@@ -9,6 +9,7 @@ function listView() {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.color = "transparent";
     elements[i].style.outline = "transparent";
+    elements[i].style.visibility = "hidden";
   }
 }
 
@@ -17,6 +18,7 @@ function gridView() {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.color = "black";
     elements[i].style.outline = "solid 2px black";
+    elements[i].style.visibility = "visible";
   }
 }
 
@@ -25,6 +27,7 @@ function whiteView() {
   for (i = 0; i < elements.length; i++) {
     elements[i].style.color = "white";
     elements[i].style.outline = "solid 2px white";
+    elements[i].style.visibility = "visible";
   }
 }
 
