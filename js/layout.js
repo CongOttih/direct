@@ -11,6 +11,14 @@ var Layout = function () {
         ) ? true : false);
     }
 
+    var elements = document.getElementsById( "about");
+
+        function view() {
+        for (i = 0; i < elements.length; i++) {
+        elements[i].style.visibility = "visible";
+        }
+        }
+
     // handle on page scroll
     var handleHeaderOnScroll = function() {
         if ($(window).scrollTop() > 60) {

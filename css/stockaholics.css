@@ -2,6 +2,10 @@ html{
     zoom: 100%;
 }
 
+#about{
+  visibility: hidden;
+  }
+
 #body {
     background-image: linear-gradient(-90deg, lightgrey, grey);
     color: #222222;
