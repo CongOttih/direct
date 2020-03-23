@@ -11,7 +11,7 @@ var Layout = function () {
         ) ? true : false);
     }
 
-    var elements = document.getElementsById( "about");
+    var elements = document.getElementsByClass( "chicken");
 
         function view() {
         for (i = 0; i < elements.length; i++) {
