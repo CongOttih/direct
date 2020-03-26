@@ -1,17 +1,32 @@
 html{
-    zoom: 100%;
-}
-
-.chicken{
-  visibility: visible;
-  }
-
-#body {
-    background-image: linear-gradient(-90deg, lightgrey, grey);
+    background-color: #FFFFFF;
     color: #222222;
     flex-direction: row;
     font-family: 'Montserrat', sans-serif;
-    font-size:20px;
+    font-size:40px;
+}
+
+#body {
+    position: fixed; 
+    top:0; 
+    left:0; 
+    height: 1em; 
+    width: 100%; 
+    margin: 0 auto;
+    background-color: #FFF;
+}
+
+.pad {
+  padding: 5%;
+}
+
+h2{
+  text-align: center;
+}
+
+.tank {
+  color: black;
+  font-size: 10px;
 }
 
 #top{
@@ -62,7 +77,7 @@ html{
   padding: 0;
   overflow: hidden;
   width: 100%;
-  background-color: #111;
+  background-color: #333;
   font-size: 25px; 
   justify-content: center;
 
@@ -110,3 +125,12 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/*
+Subcategories
++ Research
++ Nutrition
++ Marketing
++ Design 
++ Finance
+*/
