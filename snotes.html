@@ -1,3 +1,22 @@
+<!--
+ID codes for tags:
+
+Dividends #D
+Economic Terms #E
+Foriegn Exchange #F
+DayTrade Spy #H
+Dow Jones #J 
+Options Trading #O
+S&P 500 #S
+
+<div class="pad">
+	<div class="block">
+		<a target="_blank" href=""></a><br>
+		<div class="tag">?</div>
+	</div>
+</div>
+-->
+
 <head>
 	<title>Memo</title>
 	<link rel="icon" type="image/png" href="img/key.png">
@@ -6,15 +25,26 @@
 	.all{
 		visibility: hidden;
 	}	
-	th{
-		border: 5px solid black;
-		height: 50%;
-	}
 	h3{
 		text-align: center;
 	}
 	a{
 		color: blue;
+		text-decoration:none;
+		font-weight: bold;
+	}
+	.block{
+		border: solid 2px lightgrey;
+		padding: 5%;
+		border-radius: 15px;
+		background-color: #FFFEDC;
+	}
+	.tag{
+		text-align: right;
+		color: #EEE;
+	}
+	.pad{
+		padding: 2.5%;
 	}
 	</style>
 	<script type="text/javascript">
@@ -27,86 +57,195 @@
 		}
 	</script>
 </head>
-<p style="text-align:right;">
+
+<p id="top" style="text-align:right;">
 	<button style=" width: 3%; height: 1em;" onclick="view()"></button>
 </p>
 <span><br><br><br><br></span>
+
 <div class="all">
 	<div style="position: fixed; top:0; left:0; height: 1em; width: 100%; margin: 0 auto;">
 		<br>
 		<p style="text-align: center; position: static;">
-			<a href="stockaholics.html"><img width="50%;"src="img/slogo.png" alt="Ottih Notes"></a>
+			<a href="#top"><img width="50%;"src="img/slogo.png" alt="Stockaholics"></a>
 		</p>
 	</div>
 
 	<p>
-    <table style="width:100%">
-	<th><a href="https://www.ally.com/do-it-right/investing/trading-options-for-beginners/"><h3>Options Trading</h3></a></th>
-	<th><a href="https://www.thebalance.com/dividend-investing-introduction-357452"><h3>Dividend Investing</h3></a></th>
-	<th><a href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp"><h3>Foreign Exchange</h3></a></th>
-	</table>
-	<span><br><br><br></span>
-	<a style="color: blue;" href="https://www.slickcharts.com/sp500">S&P 500</a> is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the US.<br> 
-	<span><br><br><br></span>
-	As of September 2018, the S&P 500 was divided into 11 sectors, as follows, with their respective weightings by market capitalization:
-	<br>
-	<ul>
-		<li>Communication Services: 9.9%</li>
-		<li>Consumer Discretionary: 10.2%</li>
-		<li>Consumer Staples: 6.7%</li>
-		<li>Energy: 6.0%</li>
-		<li>Financials: 13.7%</li>
-		<li>Health Care: 14.9%</li>
-		<li>Industrials: 9.7%</li>
-		<li>Materials: 2.5%</li>
-		<li>Real Estate: 2.7%</li>
-		<li>Technology: 20.8%</li>
-		<li>Utilities: 2.8%</li>
-	</ul>
-	<span><br><br><br></span>
-	<a style="color: blue;" href="https://seekingalpha.com/article/4333480-bp-immense-upside-potential-even-dividends-are-temporarily-suspended"> BP: Immense Upside Potential Even If Dividends Are Temporarily Suspended</a><span><br><br><br></span>
-	Hugh's Trading Room Question:<br>
-	I noticed that sometimes when I buy an option and the market goes against me but later comes back to the level I bought it at, the option is completely not the same in terms of price. Even if there's a good market move in my favor on the same day I bought it, it doesn't impact my option as much. Why is that?
-	<span><br><br></span>
-	Answer:<br>
-	There are three things that come into action; 1. Theta 2.Volatility & 3.Bid Ask Spread.
-	<span><br><br><br></span>
-	Hugh's Trading Room Question: <br>
-	How much of my account should I risk per trade in terms of percentage?
-	<span><br><br></span>
-	Answer: <br>
-	No more than 15%. As you become more experienced, the more that number can go up or down & be flexible. But when starting out, 15% is a good number.
-	<span><br><br><br></span>
-	Hugh's Trading Room Question: <br> 
-	What does it mean when the MACD lines crossover, and which time frame is it most important in?
-	<span><br><br></span>
-	Answer: 
-	<span><br><br><br></span>
-	<b><a href="https://www.investopedia.com/terms/s/stimulus-package.asp">What Is a Stimulus Package?</a></b>
-	<br>
-	A stimulus package is a package of economic measures put together by a government to stimulate a floundering economy. The objective of a stimulus package is to reinvigorate the economy and prevent or reverse a recession by boosting employment and spending.
+	<div style=" text-align: center;">
+    <a target="_blank" href="https://www.ally.com/do-it-right/investing/trading-options-for-beginners/"><button style=" border-radius: 7px; width: 16%; height: 1.5em; background-color: #009500;"></button></a>
+    <a target="_blank" href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp"><button style=" border-radius: 7px; width: 16%; height: 1.5em; background-color: #007500;"></button></a>
+    <a target="_blank" href="https://www.thebalance.com/dividend-investing-introduction-357452"><button style=" border-radius: 7px; width: 16%; height: 1.5em; background-color: #005500;"></button></a>
+	</div>
+
+	<div class="pad">
+		<div id="S1" class="block">
+			<a target="_blank" href="https://www.slickcharts.com/sp500">S&P 500</a> is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the US.<br><br> 
+			As of September 2018, the S&P 500 was divided into 11 sectors, as follows, with their respective weightings by market capitalization:
+			<br>
+			<ul>
+			<li>Communication Services: 9.9%</li>
+			<li>Consumer Discretionary: 10.2%</li>
+			<li>Consumer Staples: 6.7%</li>
+			<li>Energy: 6.0%</li>
+			<li>Financials: 13.7%</li>
+			<li>Health Care: 14.9%</li>
+			<li>Industrials: 9.7%</li>
+			<li>Materials: 2.5%</li>
+			<li>Real Estate: 2.7%</li>
+			<li>Technology: 20.8%</li>
+			<li>Utilities: 2.8%</li>
+			</ul>
+			<div class="tag">S1</div>
+		</div>
+	</div>
+
+	<a target="_blank" href="https://seekingalpha.com/article/4333480-bp-immense-upside-potential-even-dividends-are-temporarily-suspended"> BP: Immense Upside Potential Even If Dividends Are Temporarily Suspended</a><div class="tag">?</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.suredividend.com/dividend-aristocrats-list/">What Are Dividend Aristocrats?</a><br>
+			A Dividend Aristocrat is a company in the S&P 500 that has paid and increased its base dividend every year for at least 25 consecutive years. S&P Dow Jones Indices, which owns the S&P 500 index, reviews the list of qualifying companies every year and updates the list of companies that carry Dividend Aristocrat status. Their impressive track records of dividend growth make Dividend Aristocrats some of the most attractive dividend stocks to own.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a href="https://daytradespy.com/trading-room-results/">What Happened In Hugh's Trading Room?</a><br>
+			<br>
+			Hugh's Trading Room Question:<br>
+			I noticed that sometimes when I buy an option and the market goes against me but later comes back to the level I bought it at, the option is completely not the same in terms of price. Even if there's a good market move in my favor on the same day I bought it, it doesn't impact my option as much. Why is that?
+			<span><br><br></span>
+			Answer:<br>
+			There are three things that come into action.</br>
+			1. Theta</br>
+			2. Volatility</br>
+			3. Bid Ask Spread.
+			<span><br><br><br></span>
+			Hugh's Trading Room Question: <br>
+			How much of my account should I risk per trade in terms of percentage?
+			<span><br><br></span>
+			Answer: <br>
+			No more than 15%. As you become more experienced, the more that number can go up or down & be flexible. But when starting out, 15% is a good number.
+			<span><br><br><br></span>
+			Hugh's Trading Room Question: <br> 
+			What does it mean when the MACD lines crossover, and which time frame is it most important in?
+			<span><br><br></span>
+			Answer: ?
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/fwEOxxMNwCo">What Is the Bid Ask Spread?</a><br>
+			The bid–ask spread, is the difference between the prices quoted for an immediate sale and an immediate purchase for stocks, futures contracts, options, or currency pairs. The size of the bid–ask spread in a security is one measure of the liquidity of the market and of the size of the transaction cost.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/s/stimulus-package.asp">What Is a Stimulus Package?</a>
+			<br>
+			A stimulus package is a package of economic measures put together by a government to stimulate a floundering economy. The objective of a stimulus package is to reinvigorate the economy and prevent or reverse a recession by boosting employment and spending.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/m/marginaccount.asp">What Is a Margin Account?</a><br>
+			A margin account is a brokerage account in which the broker lends the investor money to buy more securities than what they could otherwise buy with the balance in their account. Using margin to purchase securities is effectively like using the current cash or securities already in your account as collateral for a loan.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<b><a target="_blank" href="https://www.investopedia.com/terms/o/openinterest.asp">What Is Open Interest?</a></b>
+			<br>
+			Open interest is the total number of outstanding derivative contracts, such as options or futures that have not been settled for an asset. The total open interest does not count, and total every buy and sell contract. Instead, open interest provides a more accurate picture of the options trading activity, and whether money flows into the futures and options market are increasing or decreasing.
+			<div class="tag">?</div>
+		</div>
+	</div>
+	
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/luLnGZsPJW4">What Is FDIC Insurance Coverage?</a><br>
+			The Federal Deposit Insurance Corporation (FDIC) is an independent agency of the United States government that protects the funds depositors place in banks and savings associations. FDIC insurance is backed by the full faith and credit of the United States government. Since the FDIC was established in 1933, no depositor has lost a penny of FDIC-insured funds.<br>
+			<br>
+			The standard deposit insurance coverage limit is $250,000 per depositor, per FDIC-insured bank, per ownership category. Deposits held in different ownership categories are separately insured, up to at least $250,000, even if held at the same bank.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/HBfTBrE6e64">What Is SIPC Insurance Coverage?</a><br>
+			SIPC coverage provides protection to customers who hold cash and securities such as stocks, bonds or mutual funds in an account at SIPC-member brokerage firms in the event the brokerage firm fails. SIPC does not cover losses due to a decline in value of securities.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/r/reit.asp">What Is a REIT?</a><br>
+			A real estate investment trust (REIT) is a company owning and typically operating real estate which generates income. Most REITs specialize in a specific real estate sector, focusing their time, energy, and funding on that particular segment of the entire real estate horizon.<br>
+			<br>
+			Properties included in a REIT portfolio may include apartment complexes, data centers, health care facilities, hotels, infrastructure—in the form of fiber cables, cell towers, and energy pipelines—office buildings, retail centers, self-storage, timberland, and warehouses. One benefit of REITs for everyday investors is that they provide the opportunity to own a portion of real estate which generates dividend-based income.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/articles/mortgages-real-estate/10/real-estate-investment-trust-reit.asp">What Are the Different Types of REITs?</a><br>
+			1. Retail REITs<br>
+			2. Residential REITs<br>
+			3. Healthcare REITs<br>
+			4. Office REITs<br>
+			5. Mortgage REITs<br>
+			<div class="tag">?</div>
+		</div>
+	</div>
+	
+	<a target="_blank" href="https://app.tickertocker.com/">app.tickertocker.com</a>
+
+	<div class="pad">
+		<div class="block">
+			<u>Checklist for trades etc.</u><br>
+			<br>
+			- Try 50 simulated trades... or not<br>
+
+			- Need a 75% success rate<br>
+
+			- Correction/Recession passing over?<br>
+			<br>
+
+			 $75 - $100<br>
+			------------<br>
+			  Day Trade<br>
+			<br>
+			<br>
+			Goal:<br>
+			Account @ $2000<br>
+			15% Risk @ $200 - $300<br>
+			<br> 
+			Unanswered Questions:<br>
+			What Makes Someone's Net Worth?<br>
+			What Is Compound Interest?<br>
+			What Is a FICO Score?<br>
+			What Is Asset Allocation?<br>
+			What Exactly Are Capital Gains?<br>
+			What Is Included In Investment Portfolios?<br>
+			What Is a Defined-Contribution Plan?<br>
+			What Is The Difference Between a Correction & a Recession?<br>
+			What Are Bonds?<br>
+			What Is Rebalancing?
+			<div class="tag">?</div>
+		</div>
+	</div>
 	</p>
-
-
-
-<pre>
-Checklist for trades
-
-50 simulated trades
-
-75% success rate
-
-Correction/Recession passes over
-
-Kissindicator signal
-
-SIPC Insurance
-
-
- $75 - $100
-------------
-  Day Trade
-
-Risk = 200 - 350
-</pre>
 </div>
