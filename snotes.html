@@ -1,13 +1,15 @@
 <!--
 ID codes for tags:
 
-Dividends #D
-Economic Terms #E
-Foriegn Exchange #F
-DayTrade Spy #H
-Dow Jones #J 
-Options Trading #O
-S&P 500 #S
+Courses #CU
+Dividend Investing #DI
+Economic Terms #ET
+Foriegn Exchange #FE
+Futures #FU
+Dow Jones #DJ 
+Options Trading #OT
+S&P 500 #SP
+Stocks #ST
 
 <div class="pad">
 	<div class="block">
@@ -33,6 +35,9 @@ S&P 500 #S
 		text-decoration:none;
 		font-weight: bold;
 	}
+	select{
+		text-align: center;
+	}
 	.block{
 		border: solid 2px lightgrey;
 		padding: 5%;
@@ -41,7 +46,7 @@ S&P 500 #S
 	}
 	.tag{
 		text-align: right;
-		color: #EEE;
+		color: lightgreen;
 	}
 	.pad{
 		padding: 2.5%;
@@ -69,15 +74,24 @@ S&P 500 #S
 		<p style="text-align: center; position: static;">
 			<a href="#top"><img width="50%;"src="img/slogo.png" alt="Stockaholics"></a>
 		</p>
+		<p style="text-align: center;">
+		<label for="drop">👀</label>
+		<select id="drop">
+		  <option value="CU">Courses</option>
+		  <option value="DI">Dividend Investing</option>
+		  <option value="ET">Economic Terms</option>
+		  <option value="FE">Foriegn Exchange</option>
+		  <option value="FU">Futures</option>
+		  <option value="DJ">Dow Jones</option>
+		  <option value="OT">Options Trading</option>
+		  <option value="SP">S&P 500</option>
+		  <option value="ST">Stocks</option>
+		</select>
+		</p>
 	</div>
 
 	<p>
-	<div style=" text-align: center;">
-    <a target="_blank" href="https://www.ally.com/do-it-right/investing/trading-options-for-beginners/"><button style=" border-radius: 7px; width: 16%; height: 1.5em; background-color: #009500;"></button></a>
-    <a target="_blank" href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp"><button style=" border-radius: 7px; width: 16%; height: 1.5em; background-color: #007500;"></button></a>
-    <a target="_blank" href="https://www.thebalance.com/dividend-investing-introduction-357452"><button style=" border-radius: 7px; width: 16%; height: 1.5em; background-color: #005500;"></button></a>
-	</div>
-
+	<br>
 	<div class="pad">
 		<div id="S1" class="block">
 			<a target="_blank" href="https://www.slickcharts.com/sp500">S&P 500</a> is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the US.<br><br> 
@@ -100,7 +114,7 @@ S&P 500 #S
 		</div>
 	</div>
 
-	<a target="_blank" href="https://seekingalpha.com/article/4333480-bp-immense-upside-potential-even-dividends-are-temporarily-suspended"> BP: Immense Upside Potential Even If Dividends Are Temporarily Suspended</a><div class="tag">?</div>
+	<a target="_blank" href="https://seekingalpha.com/article/4333480-bp-immense-upside-potential-even-dividends-are-temporarily-suspended"> BP: Immense Upside Potential Even If Dividends Are Temporarily Suspended</a>
 
 	<div class="pad">
 		<div class="block">
@@ -128,11 +142,6 @@ S&P 500 #S
 			<span><br><br></span>
 			Answer: <br>
 			No more than 15%. As you become more experienced, the more that number can go up or down & be flexible. But when starting out, 15% is a good number.
-			<span><br><br><br></span>
-			Hugh's Trading Room Question: <br> 
-			What does it mean when the MACD lines crossover, and which time frame is it most important in?
-			<span><br><br></span>
-			Answer: ?
 			<div class="tag">?</div>
 		</div>
 	</div>
@@ -147,9 +156,33 @@ S&P 500 #S
 
 	<div class="pad">
 		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/c/compoundinterest.asp">What Is Compound Interest?</a><br>
+			Compound interest is the addition of interest to the principal sum of a loan or deposit, or in other words, interest on interest. It is the result of reinvesting interest, rather than paying it out, so that interest in the next period is then earned on the principal sum plus previously accumulated interest.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="">What Is P/L Open & P/L Day?</a><br>
+			P/L stands for Profit/Loss. P/L Day is the amount of money made or lost on your position from last night's close to the current mark plus any intra-day profit and loss. P/L Open is the amount of money made or lost on your position since the inception of the trade.<br>
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/s/stimulus-package.asp">What Is a Stimulus Package?</a>
 			<br>
 			A stimulus package is a package of economic measures put together by a government to stimulate a floundering economy. The objective of a stimulus package is to reinvigorate the economy and prevent or reverse a recession by boosting employment and spending.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/c/capitalgain.asp">What Exactly Is a Capital Gain?</a><br>
+			Capital gain is a rise in the value of a capital asset (investment or real estate) that gives it a higher worth than the purchase price. The gain is not realized until the asset is sold. A capital gain may be short-term (one year or less) or long-term (more than one year) and must be claimed on income taxes.
 			<div class="tag">?</div>
 		</div>
 	</div>
@@ -170,6 +203,16 @@ S&P 500 #S
 			<div class="tag">?</div>
 		</div>
 	</div>
+
+	<a href="https://www.nasdaq.com/articles/40-things-every-dividend-investor-should-know-about-dividend-investing-2012-12-18">40 Things Every Dividend Investor Should Know</a>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/p/portfolio.asp">What Is Included In Investment Portfolios?</a><br>
+			A portfolio investment is ownership of a stock, bond, or other financial asset with the expectation that it will earn a return or grow in value over time, or both. It entails passive or hands-off ownership of assets as opposed to direct investment, which would involve an active management role.	In fact, a portfolio investment can be any possession that is purchased for the purpose of generating a return in the short or long term.
+			<div class="tag">?</div>
+		</div>
+	</div>
 	
 	<div class="pad">
 		<div class="block">
@@ -181,6 +224,8 @@ S&P 500 #S
 		</div>
 	</div>
 
+	<a target="_blank" href="https://www.ally.com/do-it-right/investing/trading-options-for-beginners/">Option Trading For Beginners</a>
+
 	<div class="pad">
 		<div class="block">
 			<a target="_blank" href="https://youtu.be/HBfTBrE6e64">What Is SIPC Insurance Coverage?</a><br>
@@ -188,6 +233,54 @@ S&P 500 #S
 			<div class="tag">?</div>
 		</div>
 	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.thesimpledollar.com/investing/blog/what-does-your-net-worth-really-mean/">What Makes My Net Worth?</a><br>
+			In a nutshell, your net worth is really everything you own of significance (your assets) minus what you owe in debts (your liabilities). Assets include cash and investments, your home and other real estate, cars or anything else of value you own. Liabilities are what you owe on those assets — including car loans, your mortgage, and student loan debt.<br>
+			<br>
+			Net worth is a measure of your financial health because it basically says what you would have left over if you sold all of your assets to pay all of your debts. Every financial move you make should be aimed at increasing your net worth. This means either increasing assets, or decreasing liabilities.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<a target="_blank" href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp">Why Trade Forex?</a>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/a/assetallocation.asp">What Is Asset Allocation?</a><br>
+			Asset allocation is the implementation of an investment strategy that attempts to balance risk versus reward by adjusting the percentage of each asset in an investment portfolio according to the investor's risk tolerance, goals, and investment time frame. The focus is on the characteristics of the overall portfolio.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/r/rebalancing.asp">What Is Rebalancing?</a><br>
+			Rebalancing is the process of realigning the weightings of a portfolio of assets. Rebalancing involves periodically buying or selling assets in a portfolio to maintain an original or desired level of asset allocation or risk.<br>
+			<br>
+			For example, say an original target asset allocation was 50% stocks and 50% bonds. If the stocks performed well during the period, it could have increased the stock weighting of the portfolio to 70%. The investor may then decide to sell some stocks and buy bonds to get the portfolio back to the original target allocation of 50/50.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/d/dividendyield.asp">What Is Dividend Yield?</a><br>
+			The dividend yield or dividend-price ratio of a share is the dividend per share, divided by the price per share. It is also a company's total annual dividend payments divided by its market capitalization, assuming the number of shares is constant. It is often expressed as a percentage.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/d/dividendgrowthrate.asp">What Is a Dividend Growth Rate?</a><br>
+			The dividend growth rate is the average rate of growth a stock’s dividend has experienced for a specific period of time. Dividend growth is an immensely important statistic for investors to focus on. But often what’s more important than the current size of the dividend is the pace at which it has been growing (or shrinking). You see, growing dividends are a sign of a healthy stock, one that is committed to its shareholders, and may also be an indication of more dividend raises to come.
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<a target="_blank" href="https://www.thebalance.com/dividend-investing-introduction-357452">Dividend Investing Introduction</a> 
 
 	<div class="pad">
 		<div class="block">
@@ -207,6 +300,24 @@ S&P 500 #S
 			3. Healthcare REITs<br>
 			4. Office REITs<br>
 			5. Mortgage REITs<br>
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.dividend.com/">What Is a DARS Rating?</a><br>
+			The Dividend Advantage Rating System (DARS) is an exclusive and proprietary ratings model used by Dividend.com to assess the long-term sustainability, growth and safety of a stock’s underlying dividend. It works on a scale of (weak) 1-to-5 (strongest). Sophisticated algorithms filter 7,000 stocks and ETFs  through five key metrics including dividend relative strength, overall yield attractiveness, reliability, uptrend and earnings growth to generate the DARS score. The highest DARS rated stocks are updated daily under Best Dividend Stocks on Dividend.com 
+			<div class="tag">?</div>
+		</div>
+	</div>
+
+	<div class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/e/ex-dividend.asp">What Is an Ex-Dividend Date?</a><br>
+			The ex-dividend date, also known as the reinvestment date, is an investment term involving the timing of payment of dividends on stocks of corporations, income trusts, and other financial holdings, both publicly and privately held.<br>
+			<br>
+			When a company declares a dividend, it sets a record date when you must be on the company's books as a shareholder to receive the dividend. The ex-dividend date is normally two business days before the record date. If you purchase a stock on or after its ex-dividend date, you will not receive the next dividend payment.
 			<div class="tag">?</div>
 		</div>
 	</div>
@@ -234,16 +345,11 @@ S&P 500 #S
 			15% Risk @ $200 - $300<br>
 			<br> 
 			Unanswered Questions:<br>
-			What Makes Someone's Net Worth?<br>
-			What Is Compound Interest?<br>
 			What Is a FICO Score?<br>
-			What Is Asset Allocation?<br>
-			What Exactly Are Capital Gains?<br>
-			What Is Included In Investment Portfolios?<br>
 			What Is a Defined-Contribution Plan?<br>
 			What Is The Difference Between a Correction & a Recession?<br>
 			What Are Bonds?<br>
-			What Is Rebalancing?
+			What Is a DRIP?<br>
 			<div class="tag">?</div>
 		</div>
 	</div>
