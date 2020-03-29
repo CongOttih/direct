@@ -1,24 +1,3 @@
-<!--
-ID codes for tags:
-
-ALL #ALL
-Courses #CU
-Dividend Investing #DI
-Economic Terms #ET
-Foriegn Exchange #FE
-Futures #FU
-Dow Jones #DJ 
-Options Trading #OT
-Stocks #ST
-
-<div class="pad">
-	<div class="block">
-		<a target="_blank" href=""></a><br>
-		<div class="tag">?</div>
-	</div>
-</div>
--->
-
 <head>
 	<title>Memo</title>
 	<link rel="icon" type="image/png" href="img/key.png">
@@ -46,7 +25,8 @@ Stocks #ST
 	}
 	.tag{
 		text-align: right;
-		color: lightgreen;
+		color: lightgrey;
+		font-size: 10px;
 	}
 	.pad{
 		padding: 2.5%;
@@ -76,23 +56,24 @@ Stocks #ST
 		</p>
 
 		<p style="text-align: center;">
-		<select style="width: 30%; border: solid 3px #444; background-color: #222; font-size: 25px; font-weight: bold; color: green;" id="drop">
-		  <option value="ALL">ALL</option>
-		  <option value="CU">Courses</option>
-		  <option value="DI">Dividend Investing</option>
-		  <option value="ET">Economic Terms</option>
-		  <option value="FE">Foriegn Exchange</option>
-		  <option value="FU">Futures</option>
-		  <option value="OT">Options Trading</option>
-		  <option value="ST">Stocks</option>
+		<select id="selectid" style="width: 30%; border: solid 3px #444; background-color: green; font-size: 25px; font-weight: bold; color: #222;" id="drop">
+		  <option id="ALL">ALL</option>
+		  <option id="CU">Courses</option>
+		  <option id="DI">Dividend Investing</option>
+		  <option id="ET">Economic Terms</option>
+		  <option id="FE">Foriegn Exchange</option>
+		  <option id="FU">Futures</option>
+		  <option id="OT">Options Trading</option>
+		  <option id="ST">Stocks</option>
+		  <option id="N">Notes</option>
 		</select>
 		</p>
 	</div>
 
 	<p>
 	<br>
-	<div class="pad">
-		<div id="S1" class="block">
+	<div id="ST1" class="pad">
+		<div class="block">
 			<a target="_blank" href="https://www.slickcharts.com/sp500">S&P 500</a> is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the US.<br><br> 
 			As of September 2018, the S&P 500 was divided into 11 sectors, as follows, with their respective weightings by market capitalization:
 			<br>
@@ -109,21 +90,21 @@ Stocks #ST
 			<li>Technology: 20.8%</li>
 			<li>Utilities: 2.8%</li>
 			</ul>
-			<div class="tag">S1</div>
+			<div class="tag">ST</div>
 		</div>
 	</div>
 
-	<a target="_blank" href="https://seekingalpha.com/article/4333480-bp-immense-upside-potential-even-dividends-are-temporarily-suspended"> BP: Immense Upside Potential Even If Dividends Are Temporarily Suspended</a>
+	<a id="note1"target="_blank" href="https://seekingalpha.com/article/4333480-bp-immense-upside-potential-even-dividends-are-temporarily-suspended"><br><br>BP: Immense Upside Potential Even If Dividends Are Temporarily Suspended</a><br><br>
 
-	<div class="pad">
+	<div id="DI1" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.suredividend.com/dividend-aristocrats-list/">What Are Dividend Aristocrats?</a><br>
 			A Dividend Aristocrat is a company in the S&P 500 that has paid and increased its base dividend every year for at least 25 consecutive years. S&P Dow Jones Indices, which owns the S&P 500 index, reviews the list of qualifying companies every year and updates the list of companies that carry Dividend Aristocrat status. Their impressive track records of dividend growth make Dividend Aristocrats some of the most attractive dividend stocks to own.
-			<div class="tag">?</div>
+			<div class="tag">DI</div>
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="CU1" class="pad">
 		<div class="block">
 			<a href="https://daytradespy.com/trading-room-results/">What Happened In Hugh's Trading Room?</a><br>
 			<br>
@@ -141,11 +122,11 @@ Stocks #ST
 			<span><br><br></span>
 			Answer: <br>
 			No more than 15%. As you become more experienced, the more that number can go up or down & be flexible. But when starting out, 15% is a good number.
-			<div class="tag">?</div>
+			<div class="tag">CU</div>
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="ST2" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://youtu.be/fwEOxxMNwCo">What Is the Bid Ask Spread?</a><br>
 			The bid–ask spread, is the difference between the prices quoted for an immediate sale and an immediate purchase for stocks, futures contracts, options, or currency pairs. The size of the bid–ask spread in a security is one measure of the liquidity of the market and of the size of the transaction cost.
@@ -153,7 +134,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="ET1" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/c/compoundinterest.asp">What Is Compound Interest?</a><br>
 			Compound interest is the addition of interest to the principal sum of a loan or deposit, or in other words, interest on interest. It is the result of reinvesting interest, rather than paying it out, so that interest in the next period is then earned on the principal sum plus previously accumulated interest.
@@ -161,7 +142,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="ST3" class="pad">
 		<div class="block">
 			<a target="_blank" href="">What Is P/L Open & P/L Day?</a><br>
 			P/L stands for Profit/Loss. P/L Day is the amount of money made or lost on your position from last night's close to the current mark plus any intra-day profit and loss. P/L Open is the amount of money made or lost on your position since the inception of the trade.<br>
@@ -169,7 +150,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="ET2" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/s/stimulus-package.asp">What Is a Stimulus Package?</a>
 			<br>
@@ -178,7 +159,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="ET3" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/c/capitalgain.asp">What Exactly Is a Capital Gain?</a><br>
 			Capital gain is a rise in the value of a capital asset (investment or real estate) that gives it a higher worth than the purchase price. The gain is not realized until the asset is sold. A capital gain may be short-term (one year or less) or long-term (more than one year) and must be claimed on income taxes.
@@ -186,7 +167,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="ST4" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/m/marginaccount.asp">What Is a Margin Account?</a><br>
 			A margin account is a brokerage account in which the broker lends the investor money to buy more securities than what they could otherwise buy with the balance in their account. Using margin to purchase securities is effectively like using the current cash or securities already in your account as collateral for a loan.
@@ -194,7 +175,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="OT1" class="pad">
 		<div class="block">
 			<b><a target="_blank" href="https://www.investopedia.com/terms/o/openinterest.asp">What Is Open Interest?</a></b>
 			<br>
@@ -203,9 +184,9 @@ Stocks #ST
 		</div>
 	</div>
 
-	<a href="https://www.nasdaq.com/articles/40-things-every-dividend-investor-should-know-about-dividend-investing-2012-12-18">40 Things Every Dividend Investor Should Know</a>
+	<a id="note2" href="https://www.nasdaq.com/articles/40-things-every-dividend-investor-should-know-about-dividend-investing-2012-12-18">40 Things Every Dividend Investor Should Know</a><br><br>
 
-	<div class="pad">
+	<div id="ET4" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/p/portfolio.asp">What Is Included In Investment Portfolios?</a><br>
 			A portfolio investment is ownership of a stock, bond, or other financial asset with the expectation that it will earn a return or grow in value over time, or both. It entails passive or hands-off ownership of assets as opposed to direct investment, which would involve an active management role.	In fact, a portfolio investment can be any possession that is purchased for the purpose of generating a return in the short or long term.
@@ -213,7 +194,7 @@ Stocks #ST
 		</div>
 	</div>
 	
-	<div class="pad">
+	<div id="ET5" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://youtu.be/luLnGZsPJW4">What Is FDIC Insurance Coverage?</a><br>
 			The Federal Deposit Insurance Corporation (FDIC) is an independent agency of the United States government that protects the funds depositors place in banks and savings associations. FDIC insurance is backed by the full faith and credit of the United States government. Since the FDIC was established in 1933, no depositor has lost a penny of FDIC-insured funds.<br>
@@ -223,9 +204,9 @@ Stocks #ST
 		</div>
 	</div>
 
-	<a target="_blank" href="https://www.ally.com/do-it-right/investing/trading-options-for-beginners/">Option Trading For Beginners</a>
+	<a id="note3" target="_blank" href="https://www.ally.com/do-it-right/investing/trading-options-for-beginners/">Option Trading For Beginners</a><br><br>
 
-	<div class="pad">
+	<div id="ST5" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://youtu.be/HBfTBrE6e64">What Is SIPC Insurance Coverage?</a><br>
 			SIPC coverage provides protection to customers who hold cash and securities such as stocks, bonds or mutual funds in an account at SIPC-member brokerage firms in the event the brokerage firm fails. SIPC does not cover losses due to a decline in value of securities.
@@ -233,7 +214,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="ET6" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.thesimpledollar.com/investing/blog/what-does-your-net-worth-really-mean/">What Makes My Net Worth?</a><br>
 			In a nutshell, your net worth is really everything you own of significance (your assets) minus what you owe in debts (your liabilities). Assets include cash and investments, your home and other real estate, cars or anything else of value you own. Liabilities are what you owe on those assets — including car loans, your mortgage, and student loan debt.<br>
@@ -243,9 +224,9 @@ Stocks #ST
 		</div>
 	</div>
 
-	<a target="_blank" href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp">Why Trade Forex?</a>
+	<a id="note4" target="_blank" href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp">Why Trade Forex?</a><br><br>
 
-	<div class="pad">
+	<div id="ET7" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/a/assetallocation.asp">What Is Asset Allocation?</a><br>
 			Asset allocation is the implementation of an investment strategy that attempts to balance risk versus reward by adjusting the percentage of each asset in an investment portfolio according to the investor's risk tolerance, goals, and investment time frame. The focus is on the characteristics of the overall portfolio.
@@ -253,7 +234,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="ET8" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/r/rebalancing.asp">What Is Rebalancing?</a><br>
 			Rebalancing is the process of realigning the weightings of a portfolio of assets. Rebalancing involves periodically buying or selling assets in a portfolio to maintain an original or desired level of asset allocation or risk.<br>
@@ -263,7 +244,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="DI2" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/d/dividendyield.asp">What Is Dividend Yield?</a><br>
 			The dividend yield or dividend-price ratio of a share is the dividend per share, divided by the price per share. It is also a company's total annual dividend payments divided by its market capitalization, assuming the number of shares is constant. It is often expressed as a percentage.
@@ -271,7 +252,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="DI3" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/d/dividendgrowthrate.asp">What Is a Dividend Growth Rate?</a><br>
 			The dividend growth rate is the average rate of growth a stock’s dividend has experienced for a specific period of time. Dividend growth is an immensely important statistic for investors to focus on. But often what’s more important than the current size of the dividend is the pace at which it has been growing (or shrinking). You see, growing dividends are a sign of a healthy stock, one that is committed to its shareholders, and may also be an indication of more dividend raises to come.
@@ -279,9 +260,9 @@ Stocks #ST
 		</div>
 	</div>
 
-	<a target="_blank" href="https://www.thebalance.com/dividend-investing-introduction-357452">Dividend Investing Introduction</a> 
+	<a id="note5" target="_blank" href="https://www.thebalance.com/dividend-investing-introduction-357452">Dividend Investing Introduction</a><br><br>
 
-	<div class="pad">
+	<div id="DI4" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/r/reit.asp">What Is a REIT?</a><br>
 			A real estate investment trust (REIT) is a company owning and typically operating real estate which generates income. Most REITs specialize in a specific real estate sector, focusing their time, energy, and funding on that particular segment of the entire real estate horizon.<br>
@@ -291,7 +272,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="DI5" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/articles/mortgages-real-estate/10/real-estate-investment-trust-reit.asp">What Are the Different Types of REITs?</a><br>
 			1. Retail REITs<br>
@@ -303,7 +284,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="DI6" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.dividend.com/">What Is a DARS Rating?</a><br>
 			The Dividend Advantage Rating System (DARS) is an exclusive and proprietary ratings model used by Dividend.com to assess the long-term sustainability, growth and safety of a stock’s underlying dividend. It works on a scale of (weak) 1-to-5 (strongest). Sophisticated algorithms filter 7,000 stocks and ETFs  through five key metrics including dividend relative strength, overall yield attractiveness, reliability, uptrend and earnings growth to generate the DARS score. The highest DARS rated stocks are updated daily under Best Dividend Stocks on Dividend.com 
@@ -311,7 +292,7 @@ Stocks #ST
 		</div>
 	</div>
 
-	<div class="pad">
+	<div id="DI7" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/e/ex-dividend.asp">What Is an Ex-Dividend Date?</a><br>
 			The ex-dividend date, also known as the reinvestment date, is an investment term involving the timing of payment of dividends on stocks of corporations, income trusts, and other financial holdings, both publicly and privately held.<br>
@@ -321,9 +302,9 @@ Stocks #ST
 		</div>
 	</div>
 	
-	<a target="_blank" href="https://app.tickertocker.com/">app.tickertocker.com</a>
+	<a id="note6"target="_blank" href="https://app.tickertocker.com/">app.tickertocker.com</a><br><br>
 
-	<div class="pad">
+	<div id="note7" class="pad">
 		<div class="block">
 			<u>Checklist for trades etc.</u><br>
 			<br>
@@ -354,4 +335,137 @@ Stocks #ST
 		</div>
 	</div>
 	</p>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+    	$("#selectid").change(function() {
+
+		if($("#DI").is(":selected")) {
+        	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
+	        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").show(1000);
+	        $("#ET1, #ET2, #ET3, #ET4, #ET5, #ET6, #ET7, #ET8, #ET9, #ET10").hide(1000);
+	        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+	        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+	        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+	        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+	        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#CU").is(":selected")) {
+            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").show(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#ET1, #ET2, #ET3, #ET4, #ET5, #ET6, #ET7, #ET8, #ET9, #ET10").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#ET").is(":selected")) {
+            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#ET1, #ET2, #ET3, #ET4, #ET5, #ET6, #ET7, #ET8, #ET9, #ET10").show(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#FE").is(":selected")) {
+            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#ET1, #ET2, #ET3, #ET4, #ET5, #ET6, #ET7, #ET8, #ET9, #ET10").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").show(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#FU").is(":selected")) {
+            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#ET1, #ET2, #ET3, #ET4, #ET5, #ET6, #ET7, #ET8, #ET9, #ET10").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").show(1000);
+		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#OT").is(":selected")) {
+            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#ET1, #ET2, #ET3, #ET4, #ET5, #ET6, #ET7, #ET8, #ET9, #ET10").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").show(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#ST").is(":selected")) {
+            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#ET1, #ET2, #ET3, #ET4, #ET5, #ET6, #ET7, #ET8, #ET9, #ET10").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").show(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#N").is(":selected")) {
+            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#ET1, #ET2, #ET3, #ET4, #ET5, #ET6, #ET7, #ET8, #ET9, #ET10").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").show(2000);
+        }
+
+        if($("#ALL").is(":selected")) {
+            	location.href='snotes.html';
+            	alert("RESTARTING THIS BITCH, HOLD ON!");
+        }
+ 
+    });
+});
+		
+	</script>
 </div>
+
+<!--
+ID codes for tags:
+
+ALL #ALL
+Courses #CU
+Dividend Investing #DI
+Economic Terms #ET
+Foriegn Exchange #FE
+Futures #FU
+Options Trading #OT
+Stocks #ST
+
+<div class="pad">
+	<div class="block">
+		<a target="_blank" href=""></a><br>
+		<div class="tag">?</div>
+	</div>
+</div>
+
+if($("#ALL").is(":selected")) {
+    	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10, #CU11, #CU12, #CU13, #CU14, #CU15, #CU16, #CU17, #CU18, #CU19, #CU20").hide(1000);
+        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").hide(1000);
+        $("#ET1, #ET2, #ET3, #ET4, #ET5, #ET6, #ET7, #ET8, #ET9, #ET10, #ET11, #ET12, #ET13, #ET14, #ET15, $ET16, #ET17, #ET18, #ET19, #ET20").hide(1000);
+        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10, #FE11, #FE12, #FE13, #FE14, #FE15, #FE16, #FE17, #FE18, #FE19, #FE20").hide(1000);
+        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10, #FU11, #FU12, #FU13, #FU14, #FU15, #FU16, #FU17, #FU18, #FU19, #FU20").hide(1000);
+        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10, #OT11, #OT12, #OT13, #OT14, #OT15, #OT16, #OT17, #OT18, #OT19, #OT20").hide(1000);
+        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18, #ST19, #ST20").hide(1000);
+        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10, #note11 ,#note12, #note13, #note14, #note15, #note16, #note17, #note18, #note19, #note20").hide(2000);
+}
+-->
