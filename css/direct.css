@@ -114,3 +114,7 @@ body{
 a{
   color: transparent;
 }
+
+.drop{
+  visibility: hidden;
+}
