@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
 	<title>Memo</title>
 	<link rel="icon" type="image/png" href="img/key.png">
@@ -31,6 +33,36 @@
 	.pad{
 		padding: 2.5%;
 	}
+
+	@keyframes progress1 {
+	  0% {background-color: white;}
+	  100% {background-color: black;}
+	}
+
+	@keyframes progress2 {
+	  0% {color: green;}
+	  5%  {color: blue;}
+	  10%  {color: green;}
+	  15%  {color: blue;}
+	  20%  {color: lime;}
+	  25%  {color: cyan;}
+	  30%  {color: green;}
+	  35%  {color: blue;}
+	  40%  {color: green;}
+	  45%  {color: blue;}
+	  50%  {color: green;}
+	  55%  {color: blue;}
+	  60%  {color: green;}
+	  65%  {color: blue;}
+	  70%  {color: darkgreen;}
+	  75%  {color: blue;}
+	  80%  {color: green;}
+	  85%  {color: blue;}
+	  90%  {color: green;}
+	  95%  {color: blue;}
+	  100% {color: teal;}
+	}
+
 	</style>
 	<script type="text/javascript">
 		var elements = document.getElementsByClassName( "all");
@@ -56,15 +88,15 @@
 		</p>
 
 		<p style="text-align: center;">
-		<select id="selectid" style="width: 30%; border: solid 3px #444; background-color: green; font-size: 25px; font-weight: bold; color: #222;" id="drop">
+		<select id="selectid" style="width: 30%; border: solid 2px #444; background-color: green; font-size: 25px; font-weight: bold; color: #222;" id="drop">
 		  <option id="ALL">ALL</option>
-		  <option id="CU">Courses</option>
 		  <option id="DI">Dividend Investing</option>
 		  <option id="EF">Economics & Finance</option>
 		  <option id="FE">Foriegn Exchange</option>
 		  <option id="FU">Futures</option>
-		  <option id="OT">Options Trading</option>
+		  <option id="OP">Options</option>
 		  <option id="ST">Stocks</option>
+		  <option id="TS">Think Or Swim</option>
 		  <option id="N">Notes</option>
 		</select>
 		</p>
@@ -94,7 +126,7 @@
 		</div>
 	</div>
 
-	<a id="note1"target="_blank" href="https://seekingalpha.com/article/4333480-bp-immense-upside-potential-even-dividends-are-temporarily-suspended"><br><br>BP: Immense Upside Potential Even If Dividends Are Temporarily Suspended<br><br></a>
+	<p style="text-align:center;"><a id="note1"target="_blank" href="https://seekingalpha.com/article/4333480-bp-immense-upside-potential-even-dividends-are-temporarily-suspended"><br><br>BP: Immense Upside Potential Even If Dividends Are Temporarily Suspended<br><br></a></p>
 
 	<div id="DI1" class="pad">
 		<div class="block">
@@ -104,11 +136,11 @@
 		</div>
 	</div>
 
-	<div id="CU1" class="pad">
+	<div id="TS1" class="pad">
 		<div class="block">
-			<a href="https://daytradespy.com/trading-room-results/">What Happened In Hugh's Trading Room?</a><br>
+			<a href="https://daytradespy.com/trading-room-results/">Hugh's Trading Room 1</a><br>
 			<br>
-			Hugh's Trading Room Question:<br>
+			Question:<br>
 			I noticed that sometimes when I buy an option and the market goes against me but later comes back to the level I bought it at, the option is completely not the same in terms of price. Even if there's a good market move in my favor on the same day I bought it, it doesn't impact my option as much. Why is that?
 			<span><br><br></span>
 			Answer:<br>
@@ -116,14 +148,21 @@
 			1. Theta</br>
 			2. Volatility</br>
 			3. Bid Ask Spread.
-			<span><br><br><br></span>
-			Hugh's Trading Room Question: <br>
+			<div class="tag">TS</div>
+		</div>
+	</div>
+
+	<div id="TS1" class="pad">
+		<div class="block">
+			<a href="https://daytradespy.com/trading-room-results/">Hugh's Trading Room 2</a><br>
+			<br>
+			Question:<br>
 			How much of my account should I risk per trade in terms of percentage?
 			<span><br><br></span>
 			Answer: <br>
 			No more than 15%. As you become more experienced, the more that number can go up or down & be flexible. But when starting out, 15% is a good number.
-			<div class="tag">CU</div>
-		</div>
+		<div class="tag">TS</div>
+	</div>
 	</div>
 
 	<div id="ST2" class="pad">
@@ -175,16 +214,16 @@
 		</div>
 	</div>
 
-	<div id="OT1" class="pad">
+	<div id="OP1" class="pad">
 		<div class="block">
 			<b><a target="_blank" href="https://www.investopedia.com/terms/o/openinterest.asp">What Is Open Interest?</a></b>
 			<br>
 			Open interest is the total number of outstanding derivative contracts, such as options or futures that have not been settled for an asset. The total open interest does not count, and total every buy and sell contract. Instead, open interest provides a more accurate picture of the options trading activity, and whether money flows into the futures and options market are increasing or decreasing.
-			<div class="tag">OT</div>
+			<div class="tag">OP</div>
 		</div>
 	</div>
 
-	<a id="note2" href="https://www.nasdaq.com/articles/40-things-every-dividend-investor-should-know-about-dividend-investing-2012-12-18">40 Things Every Dividend Investor Should Know<br><br></a>
+	<p style="text-align:center;"><a id="note2" href="https://www.nasdaq.com/articles/40-things-every-dividend-investor-should-know-about-dividend-investing-2012-12-18">40 Things Every Dividend Investor Should Know<br><br></a></p>
 
 	<div id="EF4" class="pad">
 		<div class="block">
@@ -194,23 +233,23 @@
 		</div>
 	</div>
 
-	<div id="OT2" class="pad">
+	<div id="OP2" class="pad">
 		<div class="block">
 			<a target="_blank" href="">What Is a Holder?</a><br>
 			Refers to the investor who owns an options contract. A call holder pays for the option to buy the stock based on the parameters of the contract. A put holder has the right to sell the stock.<br>
 			<br>
 			Holders are purchasing the right to buy or sell shares, but they aren’t obligated to do anything. Their contract grants them the freedom to decide when — or if — to exercise the option, or to sell the contract before it expires. If they end up with an out-of-the-money option, they can walk away and let the contract expire. They lose only the amount they paid for the option (the premium) plus the cost of trade commissions.
-			<div class="tag">OT</div>
+			<div class="tag">OP</div>
 		</div>
 	</div>
 
-	<div id="OT3" class="pad">
+	<div id="OP3" class="pad">
 		<div class="block">
 			<a target="_blank" href="">What Is a Writer?</a><br>
 			Refers to the investor who is selling the options contract. The writer receives the premium from the holder in exchange for the promise to buy or sell the specified shares at the strike price, if the holder exercises the option.<br>
 			<br>
 			Writers don’t have much flexibility compared to Holders. For example, when a call holder decides to exercise an option, the writer is obligated to fulfill the order and sell the stock at the strike price. If the writer doesn’t already own enough shares of the stock, he’ll have to buy shares at the going market price — even if it’s higher than the strike price — and sell them at a loss to the call holder.
-			<div class="tag">OT</div>
+			<div class="tag">OP</div>
 		</div>
 	</div>
 
@@ -224,13 +263,45 @@
 		</div>
 	</div>
 
-	<a id="note3" target="_blank" href="https://www.ally.com/do-it-right/investing/trading-options-for-beginners/">Option Trading For Beginners<br><br></a>
+	<p style="text-align:center;"><a id="note3" target="_blank" href="https://www.ally.com/do-it-right/investing/trading-options-for-beginners/">Option Trading For Beginners<br><br></a></p>
 
 	<div id="ST5" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://youtu.be/HBfTBrE6e64">What Is SIPC Insurance Coverage?</a><br>
 			SIPC coverage provides protection to customers who hold cash and securities such as stocks, bonds or mutual funds in an account at SIPC-member brokerage firms in the event the brokerage firm fails. SIPC does not cover losses due to a decline in value of securities.
 			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="OP4" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/m/moneyness.asp">What Is Moneyness?</a><br>
+			In finance, moneyness is the relative position of the current price of an underlying asset with respect to the strike price of a derivative, most commonly used with put and call options and is an indicator as to whether the option would make money if it were exercised immediately. Moneyness can be measured with respect to the underlying stock or other asset's current/spot price or its future price.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP5" class="pad">
+		<div class="block">
+			<a target="_blank" href="">What Is Out-The-Money?</a><br>
+			Out of the money (OTM) is a term used to describe an option contract that only contains intrinsic value. These options will have a delta less than 50.0. An OTM call option will have a strike price that is higher than the market price of the underlying asset. Alternatively, an OTM put option has a strike price that is lower than the market price of the underlying asset. OTM options may be contrasted with in the money (ITM) options. Being out of the money doesn't mean a trader can't make a profit on that option. A trader could have bought a far out of the money option, but now that option is moving closer to being in the money (ITM). That option could end up being worth more than the trader paid for the option, even though it is currently out of the money. At expiry, though, an option is worthless if it is OTM.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP6" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/a/atthemoney.asp">What Is At-The-Money?</a><br>
+			At the money (ATM) is a situation where an option's strike price is identical to the price of the underlying security. Both call and put options can be simultaneously ATM. For example, if SPX stock is trading at $75, then the SPX $75 call option is at the money and so is the SPX $75 put option. Some traders would consider an option contract to be slightly OTM or ITM if the contract is one or two contracts away from being ATM.  
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP7" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/i/inthemoney.asp">What Is In-The-Money?</a><br>
+			An in the money call option means the option holder has the opportunity to buy the security below its current market price. Alternatively, an in the money put option means the option holder can sell the security above its current market price. In the money options contracts have higher premiums. An option that is ITM does not necessarily mean the trader is making a profit on the trade. The expense of buying the option and any commission fees must also be considered. In the money options may be contrasted with out of the money (OTM) options.
+			<div class="tag">OP</div>
 		</div>
 	</div>
 
@@ -244,7 +315,39 @@
 		</div>
 	</div>
 
-	<a id="note4" target="_blank" href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp">Why Trade Forex?<br><br></a>
+	<div id="OP8" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/e/exercise.asp">What Does It Mean To Exercise an Option?</a><br>
+			"Exercising the option" means the buyer is opting to take advantage of the right to buy or sell the shares at the strike price prior to an option contract's expiration. The difference between sell to close and exercise is that with a sell to close you transfer the right to exercise to a new party. With exercise you get to buy/sell the stocks at the agreed price.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<p style="text-align:center;"><a id="note4" target="_blank" href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp">Why Trade Forex?<br><br></a></p>
+
+	<div id="OP9" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/c/calloption.asp">What Is a Call Option?</a><br>
+			Call options are financial contracts that give the option buyer the right, but not the obligation, to buy a stock, bond, commodity or other asset or instrument at a specified price within a specific time period. A call buyer profits when the underlying asset increases in price.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP10" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/p/putoption.asp">What Is a Put Option?</a><br>
+			In finance, a put or put option is a stock market instrument which gives the holder the right to sell an asset, at a specified price, by a specified date to a given party. The purchase of a put option is interpreted as a negative sentiment about the future value of the underlying stock
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP11" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://help.yahoo.com/kb/SLN13884.html">What Is The Ticker Of an Option (Option Symbol)?</a><br>
+			An option ticker is a code by which options are identified on an options exchange or a futures exchange. An option ticker can be broken down into six parts. The components of an option's symbol are: Root symbol (ticker symbol) + Expiration Year (yy) + Expiration Month (mm) + Expiration Day (dd) + Call/Put Indicator (C or P) + Strike Price. As seen in this example, Yahoo had a call option expiring on April the 16th of 2015 at a strike price of $30.00: YHOO150416C00030000. The decimal point falls 3 places from the right in the options symbol: 00000.000
+			<div class="tag">OP</div>
+		</div>
+	</div>
 
 	<div id="EF7" class="pad">
 		<div class="block">
@@ -288,7 +391,7 @@
 		</div>
 	</div>
 
-	<a id="note5" target="_blank" href="https://www.thebalance.com/dividend-investing-introduction-357452">Dividend Investing Introduction<br><br></a>
+	<p style="text-align:center;"><a id="note5" target="_blank" href="https://www.thebalance.com/dividend-investing-introduction-357452">Dividend Investing Introduction<br><br></a></p>
 
 	<div id="DI4" class="pad">
 		<div class="block">
@@ -374,7 +477,7 @@
 		</div>
 	</div>
 	
-	<a id="note6"target="_blank" href="https://app.tickertocker.com/">app.tickertocker.com<br><br></a>
+	<p style="text-align:center;"><a id="note6"target="_blank" href="https://app.tickertocker.com/">app.tickertocker.com<br><br></a></p>
 
 	<div id="note7" class="pad">
 		<div class="block">
@@ -404,11 +507,8 @@
 			What Is Gamma In Options?
 			What Is Implied Volatility?
 			What Is Strike Price?
-			What Is a Call Option?
-			What Is a Put Option?
 			What Is a Straddle?
 			What Is a Covered Call?
-			What Does It Mean To Exercise an Option?
 			What Is an Expiration Date?
 			What Is an Option Premium?
 			What Is Extrinsic Value?
@@ -416,9 +516,6 @@
 			What Is The Last?
 			What Is The Bid?
 			What Is The Ask?
-			What Is In-The-Money?
-			What Is At-The-Money?
-			What Is Out-The-Money?
 			What Is The Volume?
 			What Is Intrinsic Value?
 			What Is The Change?
@@ -443,6 +540,17 @@
 			What Is a Cash Flow Statement?
 			What Is an Income Statement?
 			What Is Net Profit?
+			What Is The VIX?
+			What Is a Futures Contract?
+			What Is MACD?
+			What Are The Yellow Arrows In Hugh's Setup?
+			What Are The White Arrows In Hugh's Setup?
+			What Are Stochastics?
+			What Is RSI?
+			What Are Candle Sticks?
+			What Is Helkin Ashi?
+			What Is an Exponential Moving Average?
+			What Are Time Frames Used For?
 		</div>
 	</div>
 	</p>
@@ -451,91 +559,101 @@
 		$(document).ready(function() {
     	$("#selectid").change(function() {
 
-		if($("#DI").is(":selected")) {
-        	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10, #CU11, #CU12, #CU13, #CU14, #CU15, #CU16, #CU17, #CU18, #CU19, #CU20, #CU21, #CU22, #CU23, #CU24, #CU25, #CU26, #CU27, #CU28, #CU29, #CU30").hide(1000);
-	        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").show(1000);
-	        $("#EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
-	        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
-	        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
-	        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
-	        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
-	        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
-        }
+    			$('html').css("background-color", "black");
+				$('html').css("animation-name", "progress1");
+				$('html').css("animation-duration", "5s");
+				$('html').css("animation-iteration-count", "1");
+				$('a').css("color", "black");
+				$('a').css("animation-name", "progress2");
+				$('a').css("animation-duration", "1.5s");
+				$('a').css("animation-iteration-count", "infinite");
 
-        if($("#CU").is(":selected")) {
-            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10, #CU11, #CU12, #CU13, #CU14, #CU15, #CU16, #CU17, #CU18, #CU19, #CU20, #CU21, #CU22, #CU23, #CU24, #CU25, #CU26, #CU27, #CU28, #CU29, #CU30").show(1000);
-		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+
+		if($("#DI").is(":selected")) {
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").show(1000);
 		        $("#EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
 		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
-		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11").hide(1000);
 		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#TS1, #TS2, #TS3, #TS4, #TS5, #TS6, #TS7, #TS8, #TS9, #TS10").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#EF").is(":selected")) {
-            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
 		        $("#EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").show(1000);
 		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
-		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11").hide(1000);
 		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#TS1, #TS2, #TS3, #TS4, #TS5, #TS6, #TS7, #TS8, #TS9, #TS10").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#FE").is(":selected")) {
-            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
 		        $("#EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
 		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").show(1000);
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
-		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11").hide(1000);
 		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#TS1, #TS2, #TS3, #TS4, #TS5, #TS6, #TS7, #TS8, #TS9, #TS10").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#FU").is(":selected")) {
-            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
 		        $("#EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
 		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").show(1000);
-		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11").hide(1000);
 		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#TS1, #TS2, #TS3, #TS4, #TS5, #TS6, #TS7, #TS8, #TS9, #TS10").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
-        if($("#OT").is(":selected")) {
-            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
+        if($("#OP").is(":selected")) {
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
 		        $("#EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
 		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
-		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").show(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11").show(1000);
 		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#TS1, #TS2, #TS3, #TS4, #TS5, #TS6, #TS7, #TS8, #TS9, #TS10").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#ST").is(":selected")) {
-            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
 		        $("#EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
 		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
-		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11").hide(1000);
 		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").show(1000);
+		        $("#TS1, #TS2, #TS3, #TS4, #TS5, #TS6, #TS7, #TS8, #TS9, #TS10").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#TS").is(":selected")) {
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#TS1, #TS2, #TS3, #TS4, #TS5, #TS6, #TS7, #TS8, #TS9, #TS10").show(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#N").is(":selected")) {
-            	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
 		        $("#EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
 		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
-		        $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11").hide(1000);
 		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10").hide(1000);
+		        $("#TS1, #TS2, #TS3, #TS4, #TS5, #TS6, #TS7, #TS8, #TS9, #TS10").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").show(2000);
         }
 
@@ -548,18 +666,20 @@
 });
 	</script>
 </div>
+</!DOCTYPE html>
+</html>
 
 <!--
 ID codes for tags:
 
 ALL #ALL
-Courses #CU
 Dividend Investing #DI
 Economics & Finance #EF
 Foriegn Exchange #FE
 Futures #FU
 Options Trading #OT
 Stocks #ST
+Think Or Swim #TS
 
 <div class="pad">
 	<div class="block">
@@ -569,13 +689,13 @@ Stocks #ST
 </div>
 
 if($("#ALL").is(":selected")) {
-    	$("#CU1, #CU2, #CU3, #CU4, #CU5, #CU6, #CU7, #CU8, #CU9, #CU10, #CU11, #CU12, #CU13, #CU14, #CU15, #CU16, #CU17, #CU18, #CU19, #CU20, #CU21, #CU22, #CU23, #CU24, #CU25, #CU26, #CU27, #CU28, #CU29, #CU30").hide(1000);
         $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").hide(1000);
         $("#EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11, #EF12, #EF13, #EF14, #EF15, $EF16, #EF17, #EF18, #EF19, #EF20").hide(1000);
         $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10, #FE11, #FE12, #FE13, #FE14, #FE15, #FE16, #FE17, #FE18, #FE19, #FE20").hide(1000);
         $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10, #FU11, #FU12, #FU13, #FU14, #FU15, #FU16, #FU17, #FU18, #FU19, #FU20").hide(1000);
         $("#OT1, #OT2, #OT3, #OT4, #OT5, #OT6, #OT7, #OT8, #OT9, #OT10, #OT11, #OT12, #OT13, #OT14, #OT15, #OT16, #OT17, #OT18, #OT19, #OT20").hide(1000);
         $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18, #ST19, #ST20").hide(1000);
+        $("#TS1, #TS2, #TS3, #TS4, #TS5, #TS6, #TS7, #TS8, #TS9, #TS10").hide(1000);
         $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10, #note11 ,#note12, #note13, #note14, #note15, #note16, #note17, #note18, #note19, #note20").hide(2000);
 }
 -->
