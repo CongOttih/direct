@@ -5,6 +5,23 @@
 	<link rel="icon" type="image/png" href="img/key.png">
 	<link rel="shortcut icon" href="img/key.png"/>
 	<style type="text/css">
+
+		/* For desktop: */
+	.col-1 {width: 10%;}
+	.col-2 {width: 20%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 30%;}
+	.col-5 {width: 40%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 75%;}
+
+	@media only screen and (max-width: 768px) {
+	  /* For mobile phones: */
+	  [class*="col-"] {
+	    width: 85%;
+	  }
+	}
+
 	.all{
 		visibility: hidden;
 	}	
@@ -84,11 +101,11 @@
 	<div style="position: fixed; top:0; left:0; height: 1em; width: 100%; margin: 0 auto;">
 		<br>
 		<p style="text-align: center; position: static;">
-			<a href="#top"><img width="50%;"src="img/slogo.png" alt="Stockaholics"></a>
+			<a href="#top"><img class="col-6" src="img/slogo.png" alt="Stockaholics"></a>
 		</p>
 
 		<p style="text-align: center;">
-		<select id="selectid" style="width: 30%; border: solid 2px #444; background-color: green; font-size: 25px; font-weight: bold; color: #222;" id="drop">
+		<select id="selectid" style="border: solid 2px #444; background-color: green; font-size: 25px; font-weight: bold; color: #222;" class="col-5">
 		  <option id="ALL">ALL</option>
 		  <option id="DI">Dividend Investing</option>
 		  <option id="EF">Economics & Finance</option>
