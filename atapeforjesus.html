@@ -12,9 +12,8 @@
 		}
 
 		@keyframes progress {
-		  0% {background-color: black;}
-		  50% {background-color: #222222;}
-		  100% {background-color: black;}
+		  0% {border: solid 1px black;}
+		  100% {border: solid 1px white;}
 		}
 
 		.box{
@@ -33,11 +32,10 @@
 			flex-direction: column;
 			align-self: center;
 			padding: 9.25%;
-			border: solid 1px white;
+			border: progress;
 			animation-name: progress;
-			animation-duration: 2s;
-			animation-iteration-count: infinite;
-			background-color: progress;
+			animation-duration: 60s;
+			animation-iteration-count: 1;
 		}
 
 	</style>
