@@ -2,25 +2,61 @@
 <html>
 <head>
 	<link rel="icon" type="image/png" href="img/key.png">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 	<style type="text/css">
 		html {
 			background-color: black;
 			color: white;
 			font-size: 25px;
+			font-family: 'Caveat', cursive;
 		}
+
+		@keyframes progress {
+		  0% {background-color: black;}
+		  50% {background-color: #222222;}
+		  100% {background-color: black;}
+		}
+
+		.box{
+			display: flex;
+			flex-direction: row;
+		}
+
+		.shelf{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.shoulder{
+			width: 100%;
+			flex-direction: column;
+			align-self: center;
+			padding: 9.25%;
+			border: solid 1px white;
+			animation-name: progress;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			background-color: progress;
+		}
+
 	</style>
 
 	<title>a tape for jesus</title>
 </head>
 <body>
 <div style="padding: 25px;">
-	<div>
-		<img src="img/a-tape-for-jesus-cover.jpg" width="50%">
-
+	<div class="shelf">
+		<div class="box">
+			<img style="padding: 1%;" src="img/a-tape-for-jesus-cover.jpg" width="37%">
+			<div class="shoulder">
+				<iframe style="padding: 5px;" src="https://audiomack.com/embed/song/cong-1/a-tape-for-jesus-chopped-by-cong?background=1&color=FFFFFF" scrolling="no" width="100%" height="200" scrollbars="no" frameborder="0"></iframe>
+			</div>
+		</div>
+			<p style="padding: 15px; text-align: left">
+			WARNING: mixed sounds yet music, heal. interim.1 it's over troublewon'tlastalways. serve him only, it's power. mercy. the blood. 180. counsel. interim.2 immanuel. there's no one, nobody. God. anthem 808's & kids. broken. 'personal, spiritual'. u r amazing. i need God. a tape for jesus, chopped by cong.
+			</p>
 	</div>
-	<p style="padding: 5px;">
-	WARNING: mixed sounds are yet music, heal. interim.1 it's over troublewon'tlastalways. serve him only, it's power. mercy. the blood. 180. counsel. interim.2 immanuel. there's no one, nobody. God. anthem 808's & kids. broken. 'personal, spiritual'. u r amazing. i need God. a tape for jesus, chopped by cong.
-	</p>
 </div>
 
 <!--
