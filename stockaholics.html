@@ -1,436 +1,977 @@
 <!DOCTYPE html>
+<html>
+<head>
+	<title>Memo</title>
+	<link rel="icon" type="image/png" href="img/key.png">
+	<link rel="shortcut icon" href="img/key.png"/>
+	<style type="text/css">
 
-<html lang="en" class="no-js">
-   
-    <head>
-        <meta charset="utf-8"/>
-        <title>STOCKAHOLICS</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content="FlameOnePage freebie theme for web startups by FairTech SEO." name="description"/>
-        <meta content="FairTech" name="author"/>
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
-        <link rel="shortcut icon" href="img/key.png"/>
-        <link rel="icon" type="image/png" href="img/key.png">
-    </head>
-   
-  
-    <body id="body" data-spy="scroll" data-target=".header">
+		/* For desktop: */
+	.col-1 {width: 10%;}
+	.col-2 {width: 20%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 30%;}
+	.col-5 {width: 40%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 75%;}
 
-          <header class="header navbar-fixed-top">
-              <nav class="navbar" role="navigation">
-                <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-    <br>
-  <div class="tradingview-widget-container__widget" style="color: black;"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-  "symbols": [
-    {
-      "proName": "OANDA:SPX500USD",
-      "title": "S&P 500"
-    },
-    {
-      "proName": "OANDA:NAS100USD",
-      "title": "Nasdaq 100"
-    },
-    {
-      "description": "SPY",
-      "proName": "AMEX:SPY"
-    },
-    {
-      "description": "Tesla",
-      "proName": "NASDAQ:TSLA"
-    },
-    {
-      "description": "Dow Jones",
-      "proName": "AMEX:DIA"
-    },
-    {
-      "description": "Apple",
-      "proName": "NASDAQ:AAPL"
-    },
-    {
-      "description": "Google",
-      "proName": "NASDAQ:GOOGL"
-    },
-    {
-      "description": "Facebook",
-      "proName": "NASDAQ:FB"
-    },
-    {
-      "description": "Microsoft",
-      "proName": "NASDAQ:MSFT"
-    },
-    {
-      "description": "SPY",
-      "proName": "AMEX:SPY"
-    },
-    {
-      "description": "Wal-Mart",
-      "proName": "NYSE:WMT"
-    },
-    {
-      "description": "Exxon Mobil",
-      "proName": "NYSE:XOM"
-    },
-    {
-      "description": "Hershey",
-      "proName": "NYSE:HSY"
-    },
-    {
-      "description": "Wells Fargo",
-      "proName": "NYSE:WFC"
-    },
-    {
-      "description": "General Electric",
-      "proName": "NYSE:GE"
-    },
-    {
-      "description": "Chevron",
-      "proName": "NYSE:CVX"
-    },
-    {
-      "description": "SPY",
-      "proName": "AMEX:SPY"
-    },
-    {
-      "description": "Johnson & Johnson",
-      "proName": "NYSE:JNJ"
-    },
-    {
-      "description": "Berkshire H. Class B",
-      "proName": "NYSE:BRK.B"
-    },
-    {
-      "description": "Domino's",
-      "proName": "NYSE:DPZ"
-    }
-  ],
-  "colorTheme": "light",
-  "isTransparent": true,
-  "displayMode": "compact",
-  "locale": "en"
-}
-  </script>
+	@media only screen and (max-width: 768px) {
+	  /* For mobile phones: */
+	  [class*="col-"] {
+	    width: 85%;
+	  }
+	}
+
+	.all{
+		visibility: hidden;
+	}	
+	h3{
+		text-align: center;
+	}
+	a{
+		color: blue;
+		text-decoration:none;
+		font-weight: bold;
+	}
+	select{
+		text-align: center;
+	}
+	.block{
+		border: solid 2px lightgrey;
+		padding: 5%;
+		border-radius: 15px;
+		background-color: #FFFEDC;
+	}
+	.tag{
+		text-align: right;
+		color: lightgrey;
+		font-size: 10px;
+	}
+	.pad{
+		padding: 2.5%;
+	}
+
+	@keyframes progress1 {
+	  0% {background-color: white;}
+	  100% {background-color: black;}
+	}
+
+	@keyframes progress2 {
+	  0% {color: green;}
+	  5%  {color: blue;}
+	  10%  {color: green;}
+	  15%  {color: blue;}
+	  20%  {color: lime;}
+	  25%  {color: cyan;}
+	  30%  {color: green;}
+	  35%  {color: blue;}
+	  40%  {color: green;}
+	  45%  {color: blue;}
+	  50%  {color: green;}
+	  55%  {color: blue;}
+	  60%  {color: green;}
+	  65%  {color: blue;}
+	  70%  {color: darkgreen;}
+	  75%  {color: blue;}
+	  80%  {color: green;}
+	  85%  {color: blue;}
+	  90%  {color: green;}
+	  95%  {color: blue;}
+	  100% {color: teal;}
+	}
+
+	</style>
+	<script type="text/javascript">
+		var elements = document.getElementsByClassName( "all");
+
+		function view() {
+ 		for (i = 0; i < elements.length; i++) {
+    	elements[i].style.visibility = "visible";
+  		}
+		}
+	</script>
+</head>
+
+<p id="top" style="text-align:right;">
+	<button style=" width: 3%; height: 1em;" onclick="view()"></button>
+</p>
+<span><br><br><br><br></span>
+
+<div class="all">
+	<div style="position: fixed; top:0; left:0; height: 1em; width: 100%; margin: 0 auto;">
+		<br>
+		<p style="text-align: center; position: static;">
+			<a href="#top"><img class="col-6" src="img/slogo.png" alt="Stockaholics"></a>
+		</p>
+
+		<p style="text-align: center;">
+		<select id="selectid" style="border: solid 2px #444; background-color: green; font-size: 25px; font-weight: bold; color: #222;" class="col-4">
+		  <option id="ALL">ALL</option>
+		  <option id="BO">Bonds</option>
+		  <option id="CC">Cryptocurrency</option>
+		  <option id="DI">Dividend Investing</option>
+		  <option id="EF">Economics & Finance</option>
+		  <option id="FE">Foriegn Exchange</option>
+		  <option id="FU">Futures</option>
+		  <option id="OP">Options</option>
+		  <option id="ST">Stocks</option>
+		  <option id="N">Notes</option>
+		</select>
+		</p>
+	</div>
+
+	<p>
+	<br>
+	<div id="ST1" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.slickcharts.com/sp500">S&P 500</a> is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the US.<br><br> 
+			As of September 2018, the S&P 500 was divided into 11 sectors, as follows, with their respective weightings by market capitalization:
+			<br>
+			<ul>
+			<li>Communication Services: 9.9%</li>
+			<li>Consumer Discretionary: 10.2%</li>
+			<li>Consumer Staples: 6.7%</li>
+			<li>Energy: 6.0%</li>
+			<li>Financials: 13.7%</li>
+			<li>Health Care: 14.9%</li>
+			<li>Industrials: 9.7%</li>
+			<li>Materials: 2.5%</li>
+			<li>Real Estate: 2.7%</li>
+			<li>Technology: 20.8%</li>
+			<li>Utilities: 2.8%</li>
+			</ul>
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="FE1" class="pad">
+		<div class="block">
+			<a target="_blank" href="">What Is Forex?</a><br>
+			Foreign Exchange (forex or FX) is the trading of one currency for another. For example, one can swap the U.S. dollar for the euro. Foreign exchange transactions can take place on the foreign exchange market, also known as the Forex Market.
+			<div class="tag">FE</div>
+		</div>
+	</div>
+
+	<div id="FE2" class="pad">
+		<div class="block">
+			<a target="_blank" href="">What Is The Foreign Exchange Market?</a><br>
+			The foreign exchange market is a global decentralized or over-the-counter market for the trading of currencies. This market determines foreign exchange rates for every currency. It includes all aspects of buying, selling and exchanging currencies at current or determined prices.
+			<div class="tag">FE</div>
+		</div>
+	</div>
+
+	<div id="BO1" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/b/bond.asp">What Is a Bond?</a><br>
+			A bond is a fixed income instrument that represents a loan made by an investor to a borrower (typically corporate or governmental). A bond could be thought of as an I.O.U. between the lender and borrower that includes the details of the loan and its payments. Bonds are used by companies, municipalities, states, and sovereign governments to finance projects and operations. Owners of bonds are debtholders, or creditors, of the issuer. Bond details include the end date when the principal of the loan is due to be paid to the bond owner and usually includes the terms for variable or fixed interest payments made by the borrower.
+			<div class="tag">BO</div>
+		</div>
+	</div>
+
+	<div id="BO2" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/b/bond.asp">What Is a Treasury Bond?</a><br>
+			A Treasury bond (T-bond) is a government debt security issued by the federal government that earns interest until maturity, at which point the owner is also paid a par amount equal to the principal. United States Treasury securities are government debt instruments issued by the United States Department of the Treasury to finance government spending as an alternative to taxation. Treasury securities are often referred to simply as Treasurys.
+			<div class="tag">BO</div>
+		</div>
+	</div>
+
+	<div id="BO3" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/t/tips.asp">What Are TIPS?</a><br>
+			Treasury Inflation-Protected Security (TIPS) is a Treasury bond that is indexed to an inflationary gauge to protect investors from the decline in the purchasing power of their money. The principal value of TIPS rises as inflation rises. Inflation is the pace at which prices increase throughout the U.S. economy as measured by the Consumer Price Index or CPI. Inflation becomes an issue when when there isn't a commensurate rise in real wage growth to offset the negative effects of rising prices. TIPS are issued with maturities of five, 10, and 30 years and are considered a low-risk investment because the U.S. government backs them. The principal amount is protected since investors will never receive less than the originally invested principal. You can buy Treasury Inflation-Protected Securities (TIPS) directly from the U.S. Treasury or through a bank, broker, or dealer.
+			<div class="tag">BO</div>
+		</div>
+	</div>
+
+	<div id="CC1" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://cointelegraph.com/bitcoin-for-beginners/what-are-cryptocurrencies">What Is Cryptocurrency?</a><br>
+			A cryptocurrency is a digital asset designed to work as a medium of exchange that uses strong cryptography to secure financial transactions, control the creation of additional units, and verify the transfer of assets.
+			<div class="tag">CC</div>
+		</div>
+	</div>
+
+	<div id="CC2" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/b/bitcoin.asp">What Is Bitcoin?</a><br>
+			Bitcoin is a cryptocurrency. It is a decentralized digital currency without a central bank or single administrator that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries
+			<div class="tag">CC</div>
+		</div>
+	</div>
+
+	<p style="text-align:center;"><a id="note1"target="_blank" href="https://seekingalpha.com/article/4333480-bp-immense-upside-potential-even-dividends-are-temporarily-suspended"><br><br>BP: Immense Upside Potential Even If Dividends Are Temporarily Suspended<br><br></a></p>
+
+	<div id="DI1" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.suredividend.com/dividend-aristocrats-list/">What Are Dividend Aristocrats?</a><br>
+			A Dividend Aristocrat is a company in the S&P 500 that has paid and increased its base dividend every year for at least 25 consecutive years. S&P Dow Jones Indices, which owns the S&P 500 index, reviews the list of qualifying companies every year and updates the list of companies that carry Dividend Aristocrat status. Their impressive track records of dividend growth make Dividend Aristocrats some of the most attractive dividend stocks to own.
+			<div class="tag">DI</div>
+		</div>
+	</div>
+
+	<div id="ST2" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/fwEOxxMNwCo">What Is the Bid Ask Spread?</a><br>
+			The bid–ask spread, is the difference between the prices quoted for an immediate sale and an immediate purchase for stocks, futures contracts, options, or currency pairs. The size of the bid–ask spread in a security is one measure of the liquidity of the market and of the size of the transaction cost.
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="EF0" class="pad">
+		<div class="block">
+			<a target="_blank" href="">What Is an IOU?</a><br>
+			An IOU is usually an informal document acknowledging debt. An IOU differs from a promissory note in that an IOU is not a negotiable instrument and does not specify repayment terms such as the time of repayment. IOUs usually specify the debtor, the amount owed, and sometimes the creditor. IOU meaning I Owe You.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="EF1" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/c/compoundinterest.asp">What Is Compound Interest?</a><br>
+			Compound interest is the addition of interest to the principal sum of a loan or deposit, or in other words, interest on interest. It is the result of reinvesting interest, rather than paying it out, so that interest in the next period is then earned on the principal sum plus previously accumulated interest.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="FU1" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/1Mhk4UHJsRc">What Are Futures?</a><br>
+			Futures are derivative financial contracts that obligate the parties to transact an asset at a predetermined future date and price. Here, the buyer must purchase or the seller must sell the underlying asset at the set price, regardless of the current market price at the expiration date. Underlying assets include physical commodities or other financial instruments. Futures contracts detail the quantity of the underlying asset and are standardized to facilitate trading on a futures exchange. Futures can be used for hedging or trade speculation.
+			<div class="tag">FU</div>
+		</div>
+	</div>
+
+	<div id="FU2" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/1Mhk4UHJsRc">What Are Stock (Market) Futures?</a><br>
+			Stock market futures, also called market futures or equity index futures, are futures contracts that track a specific benchmark index like the S&P 500. While commodity futures require delivery of the underlying goods (IE: corn, sugar, crude oil), market futures contracts get settled with cash or get rolled over. Market futures allow traders to trade the direction of the underlying equity index, hedge equity positions and be used as a lead indicator for the markets and stocks. Unlike options that can expire worthless when out of the money, expiring market futures are rolled over into the next expiration month contract. Market futures contracts expire on the third Friday of each quarterly month, starting from March. Expiring contracts are rolled over to the next expiration month on the second Thursday of the week. 
+			<div class="tag">FU</div>
+		</div>
+	</div>
+
+	<div id="ST3" class="pad">
+		<div class="block">
+			<a target="_blank" href="">What Is P/L Open & P/L Day?</a><br>
+			P/L stands for Profit/Loss. P/L Day is the amount of money made or lost on your position from last night's close to the current mark plus any intra-day profit and loss. P/L Open is the amount of money made or lost on your position since the inception of the trade.<br>
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="EF2" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/s/stimulus-package.asp">What Is a Stimulus Package?</a>
+			<br>
+			A stimulus package is a package of economic measures put together by a government to stimulate a floundering economy. The objective of a stimulus package is to reinvigorate the economy and prevent or reverse a recession by boosting employment and spending.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="EF3" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/c/capitalgain.asp">What Exactly Is Capital Gain?</a><br>
+			Capital gain is a rise in the value of a capital asset (investment or real estate) that gives it a higher worth than the purchase price. The gain is not realized until the asset is sold. A capital gain may be short-term (one year or less) or long-term (more than one year) and must be claimed on income taxes.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="ST4" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/m/marginaccount.asp">What Is a Margin Account?</a><br>
+			A margin account is a brokerage account in which the broker lends the investor money to buy more securities than what they could otherwise buy with the balance in their account. Using margin to purchase securities is effectively like using the current cash or securities already in your account as collateral for a loan.
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="OP1" class="pad">
+		<div class="block">
+			<b><a target="_blank" href="https://www.investopedia.com/terms/o/openinterest.asp">What Is Open Interest?</a></b>
+			<br>
+			Open interest is the total number of outstanding derivative contracts, such as options or futures that have not been settled for an asset. The total open interest does not count, and total every buy and sell contract. Instead, open interest provides a more accurate picture of the options trading activity, and whether money flows into the futures and options market are increasing or decreasing.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<p style="text-align:center;"><a id="note2" href="https://www.nasdaq.com/articles/40-things-every-dividend-investor-should-know-about-dividend-investing-2012-12-18">40 Things Every Dividend Investor Should Know<br><br></a></p>
+
+	<div id="EF4" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/p/portfolio.asp">What Is Included In Investment Portfolios?</a><br>
+			A portfolio investment is ownership of a stock, bond, or other financial asset with the expectation that it will earn a return or grow in value over time, or both. It entails passive or hands-off ownership of assets as opposed to direct investment, which would involve an active management role.	In fact, a portfolio investment can be any possession that is purchased for the purpose of generating a return in the short or long term.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="OP2" class="pad">
+		<div class="block">
+			<a target="_blank" href="">What Is a Holder?</a><br>
+			Refers to the investor who owns an options contract. A call holder pays for the option to buy the stock based on the parameters of the contract. A put holder has the right to sell the stock.<br>
+			<br>
+			Holders are purchasing the right to buy or sell shares, but they aren’t obligated to do anything. Their contract grants them the freedom to decide when — or if — to exercise the option, or to sell the contract before it expires. If they end up with an out-of-the-money option, they can walk away and let the contract expire. They lose only the amount they paid for the option (the premium) plus the cost of trade commissions.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP3" class="pad">
+		<div class="block">
+			<a target="_blank" href="">What Is a Writer?</a><br>
+			Refers to the investor who is selling the options contract. The writer receives the premium from the holder in exchange for the promise to buy or sell the specified shares at the strike price, if the holder exercises the option.<br>
+			<br>
+			Writers don’t have much flexibility compared to Holders. For example, when a call holder decides to exercise an option, the writer is obligated to fulfill the order and sell the stock at the strike price. If the writer doesn’t already own enough shares of the stock, he’ll have to buy shares at the going market price — even if it’s higher than the strike price — and sell them at a loss to the call holder.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="EF5" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/luLnGZsPJW4">What Is FDIC Insurance Coverage?</a><br>
+			The Federal Deposit Insurance Corporation (FDIC) is an independent agency of the United States government that protects the funds depositors place in banks and savings associations. FDIC insurance is backed by the full faith and credit of the United States government. Since the FDIC was established in 1933, no depositor has lost a penny of FDIC-insured funds.<br>
+			<br>
+			The standard deposit insurance coverage limit is $250,000 per depositor, per FDIC-insured bank, per ownership category. Deposits held in different ownership categories are separately insured, up to at least $250,000, even if held at the same bank.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<p style="text-align:center;"><a id="note3" target="_blank" href="https://www.ally.com/do-it-right/investing/trading-options-for-beginners/">Option Trading For Beginners<br><br></a></p>
+
+	<div id="ST5" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/HBfTBrE6e64">What Is SIPC Insurance Coverage?</a><br>
+			SIPC coverage provides protection to customers who hold cash and securities such as stocks, bonds or mutual funds in an account at SIPC-member brokerage firms in the event the brokerage firm fails. SIPC does not cover losses due to a decline in value of securities.
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="OP4" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/m/moneyness.asp">What Is Moneyness?</a><br>
+			In finance, moneyness is the relative position of the current price of an underlying asset with respect to the strike price of a derivative, most commonly used with put and call options and is an indicator as to whether the option would make money if it were exercised immediately. Moneyness can be measured with respect to the underlying stock or other asset's current/spot price or its future price.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP5" class="pad">
+		<div class="block">
+			<a target="_blank" href="">What Is Out-The-Money?</a><br>
+			Out of the money (OTM) is a term used to describe an option contract that only contains intrinsic value. These options will have a delta less than 50.0. An OTM call option will have a strike price that is higher than the market price of the underlying asset. Alternatively, an OTM put option has a strike price that is lower than the market price of the underlying asset. OTM options may be contrasted with in the money (ITM) options. Being out of the money doesn't mean a trader can't make a profit on that option. A trader could have bought a far out of the money option, but now that option is moving closer to being in the money (ITM). That option could end up being worth more than the trader paid for the option, even though it is currently out of the money. At expiry, though, an option is worthless if it is OTM.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP6" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/a/atthemoney.asp">What Is At-The-Money?</a><br>
+			At the money (ATM) is a situation where an option's strike price is identical to the price of the underlying security. Both call and put options can be simultaneously ATM. For example, if SPX stock is trading at $75, then the SPX $75 call option is at the money and so is the SPX $75 put option. Some traders would consider an option contract to be slightly OTM or ITM if the contract is one or two contracts away from being ATM.  
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP7" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/i/inthemoney.asp">What Is In-The-Money?</a><br>
+			An in the money call option means the option holder has the opportunity to buy the security below its current market price. Alternatively, an in the money put option means the option holder can sell the security above its current market price. In the money options contracts have higher premiums. An option that is ITM does not necessarily mean the trader is making a profit on the trade. The expense of buying the option and any commission fees must also be considered. In the money options may be contrasted with out of the money (OTM) options.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="EF6" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.thesimpledollar.com/investing/blog/what-does-your-net-worth-really-mean/">What Makes My Net Worth?</a><br>
+			In a nutshell, your net worth is really everything you own of significance (your assets) minus what you owe in debts (your liabilities). Assets include cash and investments, your home and other real estate, cars or anything else of value you own. Liabilities are what you owe on those assets — including car loans, your mortgage, and student loan debt.<br>
+			<br>
+			Net worth is a measure of your financial health because it basically says what you would have left over if you sold all of your assets to pay all of your debts. Every financial move you make should be aimed at increasing your net worth. This means either increasing assets, or decreasing liabilities.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="OP8" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/e/exercise.asp">What Does It Mean To Exercise an Option?</a><br>
+			"Exercising the option" means the buyer is opting to take advantage of the right to buy or sell the shares at the strike price prior to an option contract's expiration. The difference between sell to close and exercise is that with a sell to close you transfer the right to exercise to a new party. With exercise you get to buy/sell the stocks at the agreed price.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<p style="text-align:center;"><a id="note4" target="_blank" href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp">Why Trade Forex?<br><br></a></p>
+
+	<div id="OP9" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/c/calloption.asp">What Is a Call Option?</a><br>
+			Call options are financial contracts that give the option buyer the right, but not the obligation, to buy a stock, bond, commodity or other asset or instrument at a specified price within a specific time period. A call buyer profits when the underlying asset increases in price.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP10" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/p/putoption.asp">What Is a Put Option?</a><br>
+			In finance, a put or put option is a stock market instrument which gives the holder the right to sell an asset, at a specified price, by a specified date to a given party. The purchase of a put option is interpreted as a negative sentiment about the future value of the underlying stock
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP11" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://help.yahoo.com/kb/SLN13884.html">What Is The Ticker Of an Option (Option Symbol)?</a><br>
+			An option ticker is a code by which options are identified on an options exchange or a futures exchange. An option ticker can be broken down into six parts. The components of an option's symbol are: Root symbol (ticker symbol) + Expiration Year (yy) + Expiration Month (mm) + Expiration Day (dd) + Call/Put Indicator (C or P) + Strike Price. As seen in this example, Yahoo had a call option expiring on April the 16th of 2015 at a strike price of $30.00: YHOO150416C00030000. The decimal point falls 3 places from the right in the options symbol: 00000.000
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="ST8" class="pad">
+		<div class="block">
+			<a href="https://daytradespy.com/trading-room-results/">Hugh's Trading Room 1</a><br>
+			<br>
+			Question:<br>
+			I noticed that sometimes when I buy an option and the market goes against me but later comes back to the level I bought it at, the option is completely not the same in terms of price. Even if there's a good market move in my favor on the same day I bought it, it doesn't impact my option as much. Why is that?
+			<span><br><br></span>
+			Answer:<br>
+			There are three things that come into action.</br>
+			1. Theta</br>
+			2. Volatility</br>
+			3. Bid Ask Spread.
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="ST9" class="pad">
+		<div class="block">
+			<a href="https://daytradespy.com/trading-room-results/">Hugh's Trading Room 2</a><br>
+			<br>
+			Question:<br>
+			How much of my account should I risk per trade in terms of percentage?
+			<span><br><br></span>
+			Answer: <br>
+			No more than 15%. As you become more experienced, the more that number can go up or down & be flexible. But when starting out, 15% is a good number.
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="ST10" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/l/long.asp">What Is Going Long?</a><br>
+			A long position, also known as simply long, is the buying of a stock, commodity, or currency with the expectation that it will rise in value. An investor who hopes to benefit from an upward price movement in an asset will "go long" with the expectation that your purchase will rise in value. It's the opposite of going short, which is when you expect the value to fall.
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="ST11" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/s/short.asp">What Is Shorting?</a><br>
+			A short, or a short position, is created when a trader sells a security first with the intention of repurchasing it or covering it later at a lower price. A trader may decide to short a security when she believes that the price of that security is likely to decrease in the near future. Shorting is a strategy used when an investor anticipates the price of a security will fall in the short term.
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="OP12" class="pad">
+		<div class="block">
+			<a target="_blank" href="">What Is Strike Price?</a><br>
+			A strike price is the set price at which a derivative contract can be bought or sold when it is exercised. For call options, the strike price is where the security can be bought by the option holder; for put options, the strike price is the price at which the security can be sold. Strike price is also known as the exercise price. The price difference between the underlying stock price and the strike price determines an option's value.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="EF7" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/a/assetallocation.asp">What Is Asset Allocation?</a><br>
+			Asset allocation is the implementation of an investment strategy that attempts to balance risk versus reward by adjusting the percentage of each asset in an investment portfolio according to the investor's risk tolerance, goals, and investment time frame. The focus is on the characteristics of the overall portfolio.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="OP13" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/t/theta.asp">What Is Theta?</a><br>
+			Theta is a measure of the rate of decline in the value of an option due to the passage of time. It can also be referred to as an option's time decay. If everything is held constant, the option loses value as time moves closer to the maturity of the option.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="EF8" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/r/rebalancing.asp">What Is Rebalancing?</a><br>
+			Rebalancing is the process of realigning the weightings of a portfolio of assets. Rebalancing involves periodically buying or selling assets in a portfolio to maintain an original or desired level of asset allocation or risk.<br>
+			<br>
+			For example, say an original target asset allocation was 50% stocks and 50% bonds. If the stocks performed well during the period, it could have increased the stock weighting of the portfolio to 70%. The investor may then decide to sell some stocks and buy bonds to get the portfolio back to the original target allocation of 50/50.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="OP14" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/articles/optioninvestor/03/021403.asp">What Is Delta?</a><br>
+			Delta measures the degree to which an option is exposed to shifts in the price of the underlying asset (i.e. stock) or commodity (i.e. futures contract). Generally speaking, an at-the-money option usually has a delta at approximately 0.5 (Calls) or -0.5 (Puts). Delta is subject to change given changes in implied volatility. And, delta tends to increase as you get closer to expiration for near or at-the-money options.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="DI2" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/d/dividendyield.asp">What Is Dividend Yield?</a><br>
+			The dividend yield or dividend-price ratio of a share is the dividend per share, divided by the price per share. It is also a company's total annual dividend payments divided by its market capitalization, assuming the number of shares is constant. It is often expressed as a percentage.
+			<div class="tag">DI</div>
+		</div>
+	</div>
+
+	<div id="OP15" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.theoptionsguide.com/gamma.aspx">What Is Gamma?</a><br>
+			Gamma measures the exposure of the options delta to the movement of the underlying stock price. Just like delta is the rate of change of options price with respect to underlying stock's price; gamma is the rate of change of delta with respect to underlying stock's price. The gamma of an option is expressed as a percentage and reflects the change in the delta in response to a one point movement of the underlying stock price.
+			<div class="tag">DI</div>
+		</div>
+	</div>
+
+	<div id="OP16" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.theoptionsguide.com/vega.aspx">What Is Vega?</a><br>
+			Vega is the measurement of an option's price sensitivity to changes in the volatility of the underlying asset. Vega represents the amount that an option contract's price changes in reaction to a 1% change in the implied volatility of the underlying asset. Options that are long have positive Vega while options that are short have negative Vega.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP17" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/i/iv.asp">What Is Implied Volatility (IV)?</a><br>
+			Implied volatility is a metric that captures the market's view of the likelihood of changes in a given security's price. Investors can use it to project future moves and supply and demand, and often employ it to price options contracts. IV is the market's forecast of a likely movement in a security's price. Again, IV is often used to price options contracts: High implied volatility results in options with higher premiums and vice versa. IV increases in bearish markets and decreases when the market is bullish.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP18" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/o/option-premium.asp">What Is an Option Premium?</a><br>
+			An option premium is the current market price of an option contract. Out-of-the-money options' premiums consist solely of extrinsic value. For stock options, the premium is quoted as a dollar amount per share, and most contracts represent the commitment of 100 shares.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP19" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/r382h59p13M">What Is Intrinsic Value?</a><br>
+			The intrinsic value of an option represents the current value of the option, or in other words how much in the money it is. So the intrinsic value represents what the buyer would receive if he decided to exercise the option right now. For in the money options, intrinsic value is calculated as the difference of the current price of the underlying asset and the strike price of the option. For options that are out of the money or at the money, the intrinsic value is always zero. This is because a buyer would never exercise an option that would result in a loss. Instead, he would let the option expire and get no payoff. Since he receives no payoff, the intrinsic value of the option is nothing to him.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP20" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/r382h59p13M">What Is Extrinsic Value?</a><br>
+			Extrinsic value measures the difference between the market price of an option, called the premium, and its intrinsic value. Extrinsic value is also the portion of the worth that has been assigned to an option by factors other than the underlying asset's price. Extrinsic value is also known as "time value" because the time left until the option contract expires is one of the primary factors affecting the option premium. For example, an option with one month to expiration that is out of the money will have more extrinsic value than that of an out of the money option with one week to expiration. Extrinsic value rises with increase in volatility in the market.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP21" class="pad">
+		<div class="block">
+			<a target="_blank" href="">What Is an Option Expiration Date?</a><br>
+			An expiration date in derivatives is the last day that derivative contracts, such as options or futures, are valid.  After that time, the contract has expired. On or before this day, investors will have already decided what to do with their expiring position. If you don't sell your options before expiration, there will be an automatic exercise if the option is IN THE MONEY. If the option is OUT OF THE MONEY, the option will be worthless, so you wouldn't exercise them in any event. However, you can sell your option before it expires to retain it's leftover value.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP22" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/VJWyEf8C6RI">What Is a Straddle?</a><br>
+			A straddle is a neutral options strategy that involves simultaneously buying both a put option and a call option for the underlying security with the same strike price and the same expiration date. A trader will profit from a long straddle when the price of the security rises or falls from the strike price by an amount more than the total cost of the premium paid. Profit potential is virtually unlimited, so long as the price of the underlying security moves very sharply.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP23" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/-LmspskwUwU">What Is a Covered Call?</a><br>
+			A covered call refers to transaction in the financial market in which the investor selling call options owns the equivalent amount of the underlying security. To execute this an investor holding a long position in an asset then writes (sells) call options on that same asset to generate an income stream. The investor's long position in the asset is the "cover" because it means the seller can deliver the shares if the buyer of the call option chooses to exercise.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="OP24" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.fool.com/knowledge-center/how-to-calculate-the-weighted-average-trade-price.aspx">What Is The Trade Price?</a><br>
+			Trade price, or average trade price, is the mean price of an asset or security over some period of time. The trade price of an option can be used to indicate your breaking even point of an option contract. Again, the trade price is also an average of the total cost of your option contracts when buying and selling options. Not to be confused with the price at which a stock/security is currently selling.
+			<div class="tag">OP</div>
+		</div>
+	</div>
+
+	<div id="DI3" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/d/dividendgrowthrate.asp">What Is a Dividend Growth Rate?</a><br>
+			The dividend growth rate is the average rate of growth a stock’s dividend has experienced for a specific period of time. Dividend growth is an immensely important statistic for investors to focus on. But often what’s more important than the current size of the dividend is the pace at which it has been growing (or shrinking). You see, growing dividends are a sign of a healthy stock, one that is committed to its shareholders, and may also be an indication of more dividend raises to come.
+			<div class="tag">DI</div>
+		</div>
+	</div>
+
+	<div id="ST6" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/e/etf.asp">What is an ETF?</a><br>
+			An ETF is called an exchange-traded fund since it's traded on an exchange just like stocks. But unlike a stock, which focuses on one company, an ETF tracks an index, a commodity, bonds, or a basket of securities.
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<p style="text-align:center;"><a id="note5" target="_blank" href="https://www.thebalance.com/dividend-investing-introduction-357452">Dividend Investing Introduction<br><br></a></p>
+
+	<div id="DI4" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/r/reit.asp">What Is a REIT?</a><br>
+			A real estate investment trust (REIT) is a company owning and typically operating real estate which generates income. Most REITs specialize in a specific real estate sector, focusing their time, energy, and funding on that particular segment of the entire real estate horizon.<br>
+			<br>
+			Properties included in a REIT portfolio may include apartment complexes, data centers, health care facilities, hotels, infrastructure—in the form of fiber cables, cell towers, and energy pipelines—office buildings, retail centers, self-storage, timberland, and warehouses. One benefit of REITs for everyday investors is that they provide the opportunity to own a portion of real estate which generates dividend-based income.
+			<div class="tag">DI</div>
+		</div>
+	</div>
+
+	<div id="DI5" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/articles/mortgages-real-estate/10/real-estate-investment-trust-reit.asp">What Are the Different Types of REITs?</a><br>
+			1. Retail REITs<br>
+			2. Residential REITs<br>
+			3. Healthcare REITs<br>
+			4. Office REITs<br>
+			5. Mortgage REITs<br>
+			<div class="tag">DI</div>
+		</div>
+	</div>
+
+	<div id="EF9" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://youtu.be/IuyejHOGCro">What Are Bonds?</a><br>
+			Bonds are issued by governments and corporations when they want to raise money. By buying a bond, you're giving the issuer a loan, and they agree to pay you back the face value of the loan on a specific date, and to pay you periodic interest payments along the way, usually twice a year.<br>
+			<br>
+			There are two ways to make money by investing in bonds. The first is to hold those bonds until their maturity date and collect interest payments on them. Bond interest is usually paid twice a year. The second way to profit from bonds is to sell them at a price that's higher than what you pay initially.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="EF10" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/f/ficoscore.asp">What Is a FICO Score?</a><br>
+			A FICO score is a type of credit score created by the Fair Isaac Corporation. Lenders use borrowers' FICO scores along with other details on borrowers' credit reports to assess credit risk and determine whether to extend credit. FICO scores take into account various factors in five areas to determine creditworthiness: payment history, current level of indebtedness, types of credit used, length of credit history, and new credit accounts.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="DI6" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.dividend.com/">What Is a DARS Rating?</a><br>
+			The Dividend Advantage Rating System (DARS) is an exclusive and proprietary ratings model used by Dividend.com to assess the long-term sustainability, growth and safety of a stock’s underlying dividend. It works on a scale of (weak) 1-to-5 (strongest). Sophisticated algorithms filter 7,000 stocks and ETFs  through five key metrics including dividend relative strength, overall yield attractiveness, reliability, uptrend and earnings growth to generate the DARS score. The highest DARS rated stocks are updated daily under Best Dividend Stocks on Dividend.com 
+			<div class="tag">DI</div>
+		</div>
+	</div>
+
+	<div id="DI7" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/e/ex-dividend.asp">What Is an Ex-Dividend Date?</a><br>
+			The ex-dividend date, also known as the reinvestment date, is an investment term involving the timing of payment of dividends on stocks of corporations, income trusts, and other financial holdings, both publicly and privately held.<br>
+			<br>
+			When a company declares a dividend, it sets a record date when you must be on the company's books as a shareholder to receive the dividend. The ex-dividend date is normally two business days before the record date. If you purchase a stock on or after its ex-dividend date, you will not receive the next dividend payment.
+			<div class="tag">DI</div>
+		</div>
+	</div>
+
+	<div id="ST7" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://seekingalpha.com/article/3502816-understanding-difference-correction-and-start-of-recession">What Is The Difference Between a Correction & a Recession?</a><br>
+			During a correction, prices fall significantly across a single asset, industry or an entire market. Corrections can be caused by any negative event that sparks selling. Anything from a new announcement from the Fed, poor jobs numbers or higher-than-expected inflation. By contrast, a bear market is a downturn that is longer and is caused by a recession - a real contraction in the economy. A recession occurs when an entire economy contracts for several months. 
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="ST11" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.kiplinger.com/article/investing/T038-C000-S001-stock-market-hours-what-time-is-the-market-open.html">What Are The Hours Of The Stock Market?</a><br>
+			Regular trading hours for the U.S. stock market, including the New York Stock Exchange (NYSE) and the Nasdaq Stock Market (Nasdaq), are 9:30 AM to 4 PM Eastern time on weekdays (except stock market holidays). And, 8:30 AM to 3 PM Central time. On early-closure days, typically right before or right after a market holiday, regular stock trading ends at 1 PM ET (12 PM CT).<br>
+			That said, trading can occur outside of normal stock market hours. For instance, on days with a regular session, there is "pre-market" trading; while hours vary, they can extend as early as 4 a.m. and go through the market open at 9:30 a.m. There are also "after-hours" sessions, which typically span from 4 to 8 p.m.
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="ST12" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/t/technicalanalysis.asp">What Is Technical Analysis?</a><br>
+			Technical analysis (TA) is a trading discipline employed to evaluate investments and identify trading opportunities by analyzing statistical trends gathered from trading activity. Technical analysis tools are used to scrutinize the ways supply and demand for a security will affect changes in price, volume, and implied volatility. Technical analysis is often used to generate short-term trading signals from various charting tools, but can also help improve the evaluation of a security's strength or weakness relative to the broader market or one of its sectors. Technical analysts believe past trading activity and price changes of a security can be valuable indicators of the security's future price movements.
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="ST13" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/f/fundamentalanalysis.asp">What Is Fundamental Analysis?</a><br>
+			Fundamental analysis (FA) is a method of measuring a security's intrinsic value by examining related economic and financial factors. Fundamental analysts study anything that can affect the security's value, from macroeconomic factors such as the state of the economy and industry conditions to microeconomic factors like the effectiveness of the company's management. The end goal is to arrive at a number that an investor can compare with a security's current price in order to see whether the security is undervalued or overvalued. Fundamental analysts search for stocks that are currently trading at prices that are higher or lower than their real value. It is a method of determining a stock's real or "fair market" value.
+			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="EF11" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/d/definedcontributionplan.asp">What Is a Defined-Contribution (DC) Plan?</a><br>
+			A defined-contribution (DC) plan is a retirement plan that's typically tax-deferred, like a 401k or a 403b, in which the employer, employee or both make contributions on a regular basis. Individual accounts are set up for participants and benefits are based on the amounts credited to these accounts plus any investment earnings on the money in the account.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="EF12" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/i/investment_horizon.asp">What Is Investment Horizon?</a><br>
+			Investment horizon is a term used to identify the length of time an investor is aiming to maintain their portfolio before selling their securities. The issuing company creates these instruments for the express purpose of raising funds to further finance business activities and expansion.
+			<div class="tag">EF</div>
+		</div>
+	</div>
+
+	<div id="DI8" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/ask/answers/what-is-a-drip/">What Is a DRIP?</a><br>
+			A DRIP is a dividend reinvestment plan whereby cash dividends are reinvested to purchase more stock in the company. DRIPs use a technique called dollar-cost averaging intended to average out the price at which you buy stock as it moves up or down.<br>
+			<br>
+			To start a DRIP account, consumers can directly contact investor relations at the desired company. If the company, like Apple, doesn’t directly offer a DRIP program, but pays dividends, investors can work with a broker to set one up, though it would lack some features of a company-sponsored plan.
+			<div class="tag">DI</div>
+		</div>
+	</div>
+
+	<div id="DI9" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/ask/answers/042915/what-difference-between-record-date-and-payable-date.asp">What Is a Record Date</a><br>
+			The record date is the date that the company reviews its records to see which shareholders qualified for the next dividend payment. However, investors who buy shares on the record date will be too late to be eligible for the next dividend. The record date is merely a date for the companies that pay dividends to get their records in order.
+			<div class="tag">DI</div>
+		</div>
+	</div>
+
+	<div id="DI10" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/ask/answers/042915/what-difference-between-record-date-and-payable-date.asp">What Is a Payable Date?</a><br>
+			The payable date refers to the date that any declared stock dividends are due to be paid out. Investors who purchased their stock before the ex-dividend date are eligible to receive dividends on the payable date. It's important to note that if the stock is sold on or after the ex-dividend date, the investor will still get paid the next scheduled dividend.
+			<div class="tag">DI</div>
+		</div>
+	</div>
+	
+	<p style="text-align:center;"><a id="note6"target="_blank" href="https://app.tickertocker.com/">app.tickertocker.com<br><br></a></p>
+
+	<div id="note7" class="pad">
+		<div class="block">
+			<u>Checklist for trades etc.</u><br>
+			<br>
+			- Try 50 simulated trades... or not<br>
+
+			- Need a 75% success rate<br>
+
+			- Correction/Recession passing over?<br>
+			<br>
+
+			 $75 - $100<br>
+			------------<br>
+			  Day Trade<br>
+			<br>
+			<br>
+			Goal:<br>
+			Account @ $2000<br>
+			15% Risk @ $200 - $300<br>
+			<br> 
+			Unanswered Questions:<br>
+			What Is The Difference Between The Buyer & The Seller?
+			What Is The Last?
+			What Is The Bid?
+			What Is The Ask?
+			What Is The Volume?
+			What Is The Change?
+			What Is The Trade Price?
+			What Is The The Mark Change?
+			What Is The The Mark?
+			What Is Volatility?
+			What Is a Pip?
+			What Is The Exchange Rate?
+			What Is a Position?
+			What Is a Market Order?
+			What Is a Limit Order?
+			What Is a Stop Loss?
+			What Is a Trailing Stop Order?
+			What Is a Supply Chain?
+			What Is Cash Flow?
+			What Is an Accounts Receivable? 
+			What Are Assets?
+			What Are Liabilities?
+			What Is a Balance Sheet?
+			What Is Considered an Expense?
+			What Is a Cash Flow Statement?
+			What Is an Income Statement?
+			What Is Net Profit?
+			What Is The VIX?
+			What Is a Futures Contract?
+			What Is MACD?
+			What Are The Yellow Arrows In Hugh's Setup?
+			What Are The White Arrows In Hugh's Setup?
+			What Are Stochastics?
+			What Is RSI?
+			What Are Candle Sticks?
+			What Is Helkin Ashi?
+			What Is an Exponential Moving Average?
+			What Are Time Frames Used For?
+			What Is P/E Ratio?
+			What Is An LLC?
+			What Is a Holding Company?
+
+
+		</div>
+	</div>
+	</p>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+    	$("#selectid").change(function() {
+
+    			$('html').css("background-color", "black");
+				$('html').css("animation-name", "progress1");
+				$('html').css("animation-duration", "5s");
+				$('html').css("animation-iteration-count", "1");
+				
+				$('a').css("color", "black");
+				$('a').css("animation-name", "progress2");
+				$('a').css("animation-duration", "1.5s");
+				$('a').css("animation-iteration-count", "infinite");
+				
+				$('button').css("background-color", "progress1");
+				$('button').css("background-color", "black");
+				$('button').css("border", "progress1");
+				$('button').css("border", "black");
+				$('button').css("animation-name", "progress1");
+				$('button').css("animation-duration", "5s");
+				$('button').css("animation-iteration-count", "1");
+
+				$("#ALL").hide();
+	
+
+		if($("#BO").is(":selected")) {
+				$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").show(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
+		      	$("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").hide(1000);
+		        $("#EF0, #EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+		if($("#CC").is(":selected")) {
+				$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").show(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").hide(1000);
+		        $("#EF0, #EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+		if($("#DI").is(":selected")) { 
+				$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").show(1000);
+		        $("#EF0, #EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#EF").is(":selected")) {
+        		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#EF0, #EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").show(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#FE").is(":selected")) {
+        		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#EF0, #EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").show(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#FU").is(":selected")) {
+        		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#EF0, #EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").show(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#OP").is(":selected")) {
+        		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#EF0, #EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").show(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#ST").is(":selected")) {
+        		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#EF0, #EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13").show(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#N").is(":selected")) {
+        		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
+		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
+		        $("#EF0, #EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").show(2000);
+        }
+
+        if($("#ALL").is(":selected")) {
+            	alert("LOADING THIS BITCH, HOLD ON.");
+            	$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
+            	$("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").show(1000);
+		        $("#EF0, #EF1, #EF2, #EF3, #EF4, #EF5, #EF6, #EF7, #EF8, #EF9, #EF10, #EF11").show(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").show(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").show(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").show(1000);
+		        $("#ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13").show(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").show(2000);
+        }
+ 
+    });
+});
+	</script>
 </div>
-<!-- TradingView Widget END -->
-                <div class="container">
-                      <div class="menu-container js_nav-item">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
-
-                          <div class="logo">
-                            <a class="logo-wrap" href="#">
-                                <img onclick="view()" class="logo-img logo-img-main" src="img/slogo.png" alt="Stockaholics Logo">
-                                <img onclick="view()" class="logo-img logo-img-active" src="img/slogo.png" alt="Stockaholics Logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="collapse navbar-collapse nav-collapse">
-					
-					<!--div class="language-switcher">
-					  <ul class="nav-lang">
-                        <li><a class="active" href="#">EN</a></li>
-					    <li><a href="#">DE</a></li>
-						<li><a href="#">FR</a></li>
-					  </ul>
-					</div---> 
-					
-                        <div class="menu-container">
-                            <ul class="nav navbar-nav navbar-nav-right">
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">Memo</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#pricing">Products</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#services">Services</a></li>
-								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://docs.google.com/spreadsheets/d/1f6-RWwnkQddQk38ZK3DRXAkSw42uMTrAt6I98CbNBXI/edit?usp=sharing">Port</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-			</header>
-       
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <div class="container">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                </ol>
-            </div>
-
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="img-responsive" src="img/1920x1080/02.jpg" alt="Slider Image">
-                    <div class="container">
-                        <div class="carousel-centered">
-                            <div class="margin-b-40">
-                                <h2 class="carousel-title">Forex Factory</h2>
-                                <p class="color-white">At the start of every trader's day, a glance at<br> Forex Factory's calendar is like checking<br>  your voicemail. It's needed.</p>
-                            </div>
-                            <a href="https://www.forexfactory.com/" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Check Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
-                    <div class="container">
-                        <div class="carousel-centered">
-                            <div class="margin-b-40">
-                                <a href="https://www.bloomberg.com/live/us"><h1 class="carousel-title" style="color: #17d265">Bloomberg LIVE TV</h1></a>
-                                <p class="color-white">Get your free 30 minute trial of Bloomberg Live TV. <br>Try using this link on several different devices and browsers. 😉</p>
-                            </div>
-                            <a href="https://www.bloomberg.com/live/us" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Watch Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--========== SLIDER ==========-->
-
-        <!--========== PAGE LAYOUT ==========-->
-        <!-- About -->
-            <div id="about">
-                <br><br>
-                <p style="text-align: center;"><a href="snotes.html" class="btn-theme btn-theme-sm btn-white-bg"><img width="80%"src="img/slogo.png"></a></p><br>
-                <!-- Masonry Grid 
-                <div class="masonry-grid row">
-                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 sm-margin-b-30">
-                        <div class="margin-b-60">
-                            <a href="https://www.ally.com/do-it-right/investing/trading-options-for-beginners/"><h2>Options Trading</h2></a>
-                            <p>An option is a contract which give the buyer the right, but not the obligation, to buy or sell an underlying asset or instrument at a specified strike price prior to or on a specified date, depending on the form of the option.</p>
-                        </div>
-                        <a href="https://youtu.be/EfmTWu2yn5Q"><img class="full-width img-responsive wow fadeInUp" src="img/500x500/01.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".2s"></a>
-                    </div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                        <div class="margin-b-60">
-                          <a href="https://www.thebalance.com/dividend-investing-introduction-357452"><h2>Dividend Investing</h2></a>
-                          <p>A strategy of buying stocks that pay dividends in order to receive a regular income from your investments. This income is in addition to any growth that your portfolio experience as the stock in it gains value.</p>  
-                        </div>
-						 <a href="https://youtu.be/weB1e4pGPeU"><img class="full-width img-responsive wow fadeInUp" src="img/500x500/02.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s"></a>
-                    </div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                        <div class="margin-t-60 margin-b-60">
-                            <a href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp"><h2>Foreign Exchange</h2></a>
-                            <p> Foreign exchange (also known as FX or Forex) is the process of changing one currency into another currency for a variety of reasons, usually for commerce, trading, or tourism.</p>
-                        </div>
-                        <a href="https://youtu.be/NhFlqFVBmxc"><img class="full-width img-responsive wow fadeInUp" src="img/500x500/03.jpg" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".4s"></a>-->
-			</div>
-                <!-- End Masonry Grid -->
-            </div>
-        </div>
-        <!-- End About -->
-        <!-- Pricing -->
-        <div id="pricing">
-            <div class="bg-color-sky-light">
-                <div class="content-lg container">
-                    <div class="row row-space-1">
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <!-- Pricing -->
-                            <div class="pricing">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-chemistry"></i>
-                                    <h3>Inner Circle <span> - $</span> 79.00</h3>
-                                    <p>See what Hugh is interested in trading today with the Inner Circle. No long term contracts or financial commitments. Just an easy, cost effective way to start your journey trading SPY options!</p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Morning Report</li>
-                                    <li class="pricing-list-item">$79 Per Month</li>
-                                    <li class="pricing-list-item">Thursday Night Chat</li>
-                                </ul>
-                                <a href="https://daytradespy.com/inner-circle/" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Easy Money</a>
-                            </div>
-                            <!-- End Pricing -->
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <!-- Pricing -->
-                            <div class="pricing pricing-active">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-badge"></i>
-                                    <h3>Secret Sauce <span> - $</span> 150.00</h3>
-                                    <p>It will signal when the programmed criteria has been met, removing the need to confirm an entry with chart-patterns. It's simply an indication that we're interested to "buy now".</p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Goal of 5% ROI</li>
-                                    <li class="pricing-list-item">$150 Per Week</li>
-                                    <li class="pricing-list-item">97% Success Rate</li>
-                                </ul>
-                                <a href="https://kissindicator.com/publcs/pricing" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Easy Money</a>
-                            </div>
-                            <!-- End Pricing -->
-                        </div>
-                        <div class="col-sm-4">
-                            <!-- Pricing -->
-                            <div class="pricing">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-shield"></i>
-                                    <h3>Trading Room<span> - $</span> 99.00</h3>
-                                    <p>Hugh’s Trading Room is perfect for those looking to trade SPY options in real time and real market conditions! Interact with expert traders Hugh and Alex as they trade. Real trades for real people.</p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Daily Sessions</li>
-                                    <li class="pricing-list-item">$99 Per Week</li>
-                                    <li class="pricing-list-item">No Long Term Contract</li>
-                                </ul>
-                                <a href="https://daytradespy.com/trading-room/" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Easy Money</a>
-                            </div>
-                            <!-- End Pricing -->
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
-        </div>
-        <div style="background-color:#000000; color: grey; font-size: 12px; height: 100px; text-align: center; font-style: italic;"><img height="100px" src="img/black.gif"><i>focus</i><img height="100px" src="img/black.gif"></div>
-        <!-- Services -->
-        <div id="services">
-            <div class="bg-color-sky-light" data-auto-height="true">
-                <div class="content-lg container">
-                    <div class="row margin-b-40">
-                        <div class="col-sm-6">
-                            <h2>Services</h2>
-                            <p>The following are platforms that provide excellent financial news, data, techniques, and lessons. Some of these services are free and available as an app on the app store.</p>
-                        </div>
-                    </div>
-                    <!--// end row -->
-
-                    <div class="row row-space-1 margin-b-2">
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-chemistry"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>CNBC</h3>
-                                    <p class="margin-b-5">CNBC is the world leader in business news and real-time financial market coverage. Find fast, actionable information.</p>
-                                </div>
-                                <a href="https://www.cnbc.com/" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service bg-color-base" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon color-white icon-screen-tablet"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3 class="color-white">Bloomberg</h3>
-                                    <p class="color-white margin-b-5">Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News.</p>
-                                </div>
-                                <a href="https://www.bloomberg.com/" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>MarketWatch</h3>
-                                    <p class="margin-b-5">An additional American financial information website that provides business news, analysis, and stock market data.</p>
-                                </div>
-                                <a href="https://www.marketwatch.com/" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
-
-                    <div class="row row-space-1">
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-notebook"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Seeking Alpha</h3>
-                                    <p class="margin-b-5">Stock market Insights & financial analysis, including free earnings call transcripts, investment ideas and ETF & stock research written by finance experts.</p>
-                                </div>
-                                <a href="https://seekingalpha.com/" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-speedometer"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Yahoo! Finance</h3>
-                                    <p class="margin-b-5">Providing financial news, data and commentary including stock quotes, press releases, financial reports, and original content.</p>
-                                </div>
-                                <a href="https://finance.yahoo.com/" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>StockTwits</h3>
-                                    <p class="margin-b-5">See what actual investors and traders are saying in real time about the stocks, crypto, futures, and forex you care about for free.</p>
-                                </div>
-                                <a href="https://stocktwits.com/" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
-        </div>
-        <!-- End Service -->
-        <!--========== END PAGE LAYOUT ==========-->
-
-        <!--========== FOOTER ==========-->
-        <footer class="footer">
-            <!-- Copyright -->
-            <div class="content container">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <img class="footer-logo" src="img/slogo.png" alt="Stockaholics Logo">
-                    </div>
-                    <div class="col-xs-6 text-right">
-                        <p class="margin-b-0"><a class="fweight-700" href="#">STOCKAHOLICS</a> by <a class="fweight-700" href="#">Ottih</a></p>
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
-            <!-- End Copyright -->
-        </footer>
-        <!--========== END FOOTER ==========-->
-
-        <!-- Back To Top -->
-        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
-
-        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-        <!-- CORE PLUGINS -->
-        <script src="vendor/jquery.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-
-        <!-- PAGE LEVEL PLUGINS -->
-        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
-        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
-        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
-        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
-        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
-        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
-        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-
-        <!-- PAGE LEVEL SCRIPTS -->
-        <script src="js/layout.min.js" type="text/javascript"></script>
-        <script src="js/components/wow.min.js" type="text/javascript"></script>
-        <script src="js/components/swiper.min.js" type="text/javascript"></script>
-        <script src="js/components/masonry.min.js" type="text/javascript"></script>
-
-    </body>
-    <!-- END BODY -->
+</!DOCTYPE html>
 </html>
+
+<!--
+<div id="?" class="pad">
+		<div class="block">
+			<a target="_blank" href=""></a><br>
+			<div class="tag">?</div>
+		</div>
+	</div>
+-->
