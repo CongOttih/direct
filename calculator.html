@@ -1,0 +1,70 @@
+<!Doctype>
+<html>
+  <head>
+    <title>TEIN</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+<!--     https://www.w3schools.com/tags/att_input_size.asp -->
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+ </head>
+  <body>
+    <div id="header">
+      <br>
+      <h1 class="title">CALCULATOR</h1> 
+    </div>
+    
+    <div id="container">
+      <div id="form">
+        <div class="data-input">
+        
+        <div class="category">
+            <div class="label"><h1>Male or Female?</h1></div>
+            <div class="line"><div>       <select id="sex"><option value="male">Male</option><option value="female">Female</option><</select></div>
+              </div></div>
+            
+          <div class="category">
+            <div class="label"><h1>Body Weight (lbs.)?</h1></div>
+            <div class="line"><div><input type="text" id="bw" placeholder="XX"></div>
+              </div></div>
+        
+      <div class="category">
+            <div class="label"><h1 class="dpa">Maintain Mass or Gain Mass?</h1></div>
+            <div class="line"><div>       <select id="goal"><option value="maintain">Maintain</option><option value="gain">Gain</option><option value="maximumgain">Maximum Gain</option></select></div>
+              </div></div>
+        
+        <div class="category">
+          <div class="label"><h1 class="dpa">For Daily Protein Amount ,</h1></div>
+            <div class="line">
+              <div><button id="submit" onclick="calculateWC()">Submit</button></div></div></div>
+          
+        </div>
+      </div>
+      
+      <div class="middle">
+        <div class="daily-amount">
+          <div id="d-amount">
+            <br><br><br>
+            <span id = "amount"></span>
+            <medium id="grams">Grams Per Day</medium>
+          </div>
+        </div>
+        <br><br>
+      </div>
+      
+      <div class="right">
+        <div class="middle-of-right">
+        <h1 class="text">Weight Class</h1>
+        <div id="outerbody">
+          <br><br>
+          <div id="bodyclass"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <a href="navmenu.html"><div id="footer">
+      <p class="tab"> <img src="images/menu-tab.png"></p></a>
+    </div>
+        
+<script type="text/javascript" src="calculator.js"></script>
+  </body>
+</html>

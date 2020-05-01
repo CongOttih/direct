@@ -1,0 +1,116 @@
+body{
+  background-color: #75807E;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+html{
+  height: 1000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header{
+ display: flex;
+ flex-direction: column-reverse;
+ position: fixed;
+ padding: 100px;
+ top:0;
+ left:0;
+ height: 50em; 
+ width: 100%;
+ margin: 0 auto;
+ background-color: #75807E;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tab{
+  margin: auto;
+  text-align: center;
+}
+
+#container-2{
+  border: solid black 0px;
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+#container-3{
+  border: solid black 0px;
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+#container-4{
+  border: solid black 0px;
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+#container-5{
+  border: solid black 0px;
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+.title{
+  margin: auto;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 15px #FFFFFF;
+  animation-name: progress;
+  animation-duration: 30s;
+  font-size:150px;
+  letter-spacing: 100px;
+}
+
+@keyframes progress {
+  0% {text-shadow: 1px 1px 15px #FFFFFF;}
+  5%  {text-shadow: 1px 1px 15px #75807E;}
+  10%  {text-shadow: 1px 1px 15px #FFFFFF;}
+  15%  {text-shadow: 1px 1px 15px #75807E;}
+  20%  {text-shadow: 1px 1px 15px #FFFFFF;}
+  25%  {text-shadow: 1px 1px 15px #75807E;}
+  30%  {text-shadow: 1px 1px 15px #FFFFFF;}
+  35%  {text-shadow: 1px 1px 15px #75807E;}
+  40%  {text-shadow: 1px 1px 15px #FFFFFF;}
+  45%  {text-shadow: 1px 1px 15px #75807E;}
+  50%  {text-shadow: 1px 1px 15px #FFFFFF;}
+  55%  {text-shadow: 1px 1px 15px #75807E;}
+  65%  {text-shadow: 1px 1px 15px #FFFFFF;}
+  70%  {text-shadow: 1px 1px 15px #75807E;}
+  75%  {text-shadow: 1px 1px 15px #FFFFFF;}
+  80%  {text-shadow: 1px 1px 15px #75807E;}
+}
+
+.center{
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#container{
+  padding: 20px; 
+  height: 100%; 
+  width: 50%;
+  border-radius: 500px;
+  margin: 0 auto;
+  background-color: #EAFFFB;
+  border: 2px solid #75807E;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
