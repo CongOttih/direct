@@ -88,6 +88,14 @@
  		for (i = 0; i < elements.length; i++) {
     	elements[i].style.visibility = "visible";
   		}
+  		alert("Welcome motherfucker, this is your chance for financial literacy.")
+  		alert("Click the main logo for a simple tutorial.")
+		}
+
+		function logo() {
+		alert("Stockaholics is organized by topics. Click the menu bar underneath the main logo to view your topics.")
+		alert("Each topic has questions worth knowing the answer to. Each question can be clicked on for a more detailed answer.")
+		alert("God speed nigga. ✌🏿")	
 		}
 	</script>
 </head>
@@ -101,21 +109,23 @@
 	<div style="position: fixed; top:0; left:0; height: 1em; width: 100%; margin: 0 auto;">
 		<br>
 		<p style="text-align: center; position: static;">
-			<a href="#top"><img class="col-6" src="img/slogo.png" alt="Stockaholics"></a>
+			<a onclick="logo()" href="#top"><img class="col-6" src="img/slogo.png" alt="Stockaholics"></a>
 		</p>
 
 		<p style="text-align: center;">
 		<select id="selectid" style="border: solid 2px #444; background-color: green; font-size: 25px; font-weight: bold; color: #222;" class="col-4">
 		  <option id="ALL">ALL</option>
+		  <option id="AU">Audit</option>
 		  <option id="BO">Bonds</option>
 		  <option id="CC">Cryptocurrency</option>
-		  <option id="DI">Dividend Investing</option>
+		  <option id="DI">Dividends</option>
 		  <option id="EC">Economics</option>
 		  <option id="FI">Finance</option>
-		  <option id="FE">Foriegn Exchange</option>
+		  <option id="FE">Forex</option>
 		  <option id="FU">Futures</option>
 		  <option id="OP">Options</option>
 		  <option id="ST">Stocks</option>
+		  <option id="TR">Trading</option>
 		  <option id="N">Notes</option>
 		</select>
 		</p>
@@ -143,6 +153,31 @@
 			<li>Utilities: 2.8%</li>
 			</ul>
 			<div class="tag">ST</div>
+		</div>
+	</div>
+
+	<div id="AU0" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/a/audit.asp">What Is An Audit?</a><br>
+			A financial audit is an objective examination and evaluation of the financial statements of an organization to make sure that the financial records are a fair and accurate representation of the transactions they claim to represent.<br><br>
+			It is what the IRS does when they coming for your ass. 
+			<div class="tag">AU</div>
+		</div>
+	</div>
+
+	<div id="AU1" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/a/audit.asp">What Is Accounting?</a><br>
+			Accounting is the process of recording financial transactions pertaining to a business. The accounting process includes summarizing, analyzing, and reporting these transactions to oversight agencies, regulators, and tax collection entities. The financial statements used in accounting are a concise summary of financial transactions over an accounting period, summarizing a company's operations, financial position, and cash flows. 
+			<div class="tag">AU</div>
+		</div>
+	</div>
+
+	<div id="AU2" class="pad">
+		<div class="block">
+			<a target="_blank" href="https://www.investopedia.com/terms/a/accounting.asp">What Are Taxes?</a><br>
+			Taxes are involuntary fees levied on individuals or corporations and enforced by a government entity—whether local, regional or national—in order to finance government activities.
+			<div class="tag">AU</div>
 		</div>
 	</div>
 
@@ -186,7 +221,7 @@
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/b/bond.asp">What Is a Bond?</a><br>
 			A bond is a fixed income instrument that represents a loan made by an investor to a borrower (typically corporate or governmental). A bond could be thought of as an I.O.U. between the lender and borrower that includes the details of the loan and its payments. Bonds are used by companies, municipalities, states, and sovereign governments to finance projects and operations. Owners of bonds are debtholders, or creditors, of the issuer. Bond details include the end date when the principal of the loan is due to be paid to the bond owner and usually includes the terms for variable or fixed interest payments made by the borrower.
-			<br>
+			<br><br>
 			Once again bonds are issued by governments and corporations when they want to raise money. By buying a bond, you're giving the issuer a loan, and they agree to pay you back the face value of the loan on a specific date, and to pay you periodic interest payments along the way, usually twice a year. There are two ways to make money by investing in bonds. The first is to hold those bonds until their maturity date and collect interest payments on them. Bond interest is usually paid twice a year. The second way to profit from bonds is to sell them at a price that's higher than what you pay initially.
 			<div class="tag">BO</div>
 		</div>
@@ -234,7 +269,7 @@
 		</div>
 	</div>
 
-	<div id="ST2" class="pad">
+	<div id="TR0" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://youtu.be/fwEOxxMNwCo">What Is the Bid Ask Spread?</a><br>
 			The bid–ask spread, is the difference between the prices quoted for an immediate sale and an immediate purchase for stocks, futures contracts, options, or currency pairs. The size of the bid–ask spread in a security is one measure of the liquidity of the market and of the size of the transaction cost.
@@ -274,7 +309,7 @@
 		</div>
 	</div>
 
-	<div id="ST3" class="pad">
+	<div id="TR1" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://tlc.thinkorswim.com/center/Glossary/P">What Is P/L Open & P/L Day?</a><br>
 			P/L stands for Profit/Loss. P/L Day is the amount of money made or lost on your position from last night's close to the current mark plus any intra-day profit and loss. P/L Open is the amount of money made or lost on your position since the inception of the trade.<br>
@@ -308,7 +343,7 @@
 		</div>
 	</div>
 
-	<div id="ST4" class="pad">
+	<div id="TR2" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/m/marginaccount.asp">What Is a Margin Account?</a><br>
 			A margin account is a brokerage account in which the broker lends the investor money to buy more securities than what they could otherwise buy with the balance in their account. Using margin to purchase securities is effectively like using the current cash or securities already in your account as collateral for a loan.
@@ -367,7 +402,7 @@
 
 	<p style="text-align:center;"><a id="note3" target="_blank" href="https://www.ally.com/do-it-right/investing/trading-options-for-beginners/">Option Trading For Beginners<br><br></a></p>
 
-	<div id="ST5" class="pad">
+	<div id="TR3" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://youtu.be/HBfTBrE6e64">What Is SIPC Insurance Coverage?</a><br>
 			Securities Investor Protection Corporation (SIPC) coverage provides protection to customers who hold cash and securities such as stocks, bonds or mutual funds in an account at SIPC-member brokerage firms in the event the brokerage firm fails. SIPC does not cover losses due to a decline in value of securities.
@@ -451,7 +486,7 @@
 		</div>
 	</div>
 
-	<div id="ST8" class="pad">
+	<div id="TR4" class="pad">
 		<div class="block">
 			<a href="https://daytradespy.com/trading-room-results/">Hugh's Trading Room 1</a><br>
 			<br>
@@ -467,7 +502,7 @@
 		</div>
 	</div>
 
-	<div id="ST9" class="pad">
+	<div id="TR5" class="pad">
 		<div class="block">
 			<a href="https://daytradespy.com/trading-room-results/">Hugh's Trading Room 2</a><br>
 			<br>
@@ -480,7 +515,7 @@
 		</div>
 	</div>
 
-	<div id="ST10" class="pad">
+	<div id="TR6" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/l/long.asp">What Is Going Long?</a><br>
 			A long position, also known as simply long, is the buying of a stock, commodity, or currency with the expectation that it will rise in value. An investor who hopes to benefit from an upward price movement in an asset will "go long" with the expectation that your purchase will rise in value. It's the opposite of going short, which is when you expect the value to fall.
@@ -488,7 +523,7 @@
 		</div>
 	</div>
 
-	<div id="ST11" class="pad">
+	<div id="TR7" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.investopedia.com/terms/s/short.asp">What Is Shorting?</a><br>
 			A short, or a short position, is created when a trader sells a security first with the intention of repurchasing it or covering it later at a lower price. A trader may decide to short a security when she believes that the price of that security is likely to decrease in the near future. Shorting is a strategy used when an investor anticipates the price of a security will fall in the short term.
@@ -741,7 +776,7 @@
 		</div>
 	</div>
 
-	<div id="ST17" class="pad">
+	<div id="TR8" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://youtu.be/1rwVV_8uUxc">What Is a Candle Stick?</a><br>
 			A candlestick is a type of price chart used that displays the high, low, open, and closing prices of a security for a specific period. It originated from Japanese rice merchants and traders to track market prices and daily momentum hundreds of years before becoming popularized in the United States. The wide part of the candlestick is called the "real body" and tells investors whether the closing price was higher or lower than the opening price (black/red if the stock closed lower, white/green if the stock closed higher).
@@ -749,7 +784,7 @@
 		</div>
 	</div>
 
-	<div id="ST18" class="pad">
+	<div id="TR9" class="pad">
 		<div class="block">
 			<a target="_blank" href="https://www.thebalance.com/heikin-ashi-chart-basics-1031191">What Is Heikin Ashi?</a><br>
 			Heikin Ashi is a type of trading chart that originated in Japan, and it's similar to candlestick charts in that the color of the candlestick denotes the direction the price is moving. The main difference between traditional candlestick charts and Heikin Ashi (HA) charts is that in HA charts the average price moves, creating a smoother appearance. Because the HA price bars are averaged, they don't show the exact open and close prices for a particular time period. Some traders want additional confirmation of trend direction, and Heikin Ashi charts are often used as a technical indicator on a typical candlestick chart, to help highlight and clarify the current trend.Heikin Ashi charts are sometimes used on their own, especially by swing traders or investors. Day traders tend to use Heikin Ashi charts more as an indicator, as HA charts have certain other benefits.
@@ -825,8 +860,7 @@
 			  Day Trade<br>
 			<br>
 			<br>
-			Goal:<br>
-			Account @ $2000<br>
+			Goal for a $2000 account.<br>
 			15% Risk @ $200 - $300<br>
 			<br> 
 			Unanswered Questions:<br>
@@ -894,8 +928,23 @@
 
 				$("#ALL").hide();
 	
+		if($("#AU").is(":selected")) {
+				$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").show(1000);
+				$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
+		      	$("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").hide(1000);
+		        $("#EC0, #EC1, #EC2, #EC3, #EC4, #EC5, #EC6, #EC7, #EC8, #EC9, #EC10, #EC11").hide(1000);
+		        $("#FI0, #FI1, #FI2, #FI3, #FI4, #FI5, #FI6, #FI7, #FI8, #FI9, #FI10, #FI11").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
+		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
 
 		if($("#BO").is(":selected")) {
+				$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
 				$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").show(1000);
 				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
 		      	$("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").hide(1000);
@@ -905,10 +954,12 @@
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
 		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
 		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
 		if($("#CC").is(":selected")) {
+				$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
 				$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
 				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").show(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").hide(1000);
@@ -918,10 +969,12 @@
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
 		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
 		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
 		if($("#DI").is(":selected")) { 
+				$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
 				$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
 				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").show(1000);
@@ -931,10 +984,12 @@
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
 		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
 		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#EC").is(":selected")) {
+        		$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
         		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
 				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
@@ -944,10 +999,12 @@
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
 		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
 		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#FI").is(":selected")) {
+        		$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
         		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
 				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
@@ -957,10 +1014,12 @@
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
 		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
 		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#FE").is(":selected")) {
+        		$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
         		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
 				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
@@ -970,10 +1029,12 @@
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
 		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
 		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#FU").is(":selected")) {
+        		$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
         		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
 				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
@@ -983,10 +1044,12 @@
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").show(1000);
 		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
 		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#OP").is(":selected")) {
+        		$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
         		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
 				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
@@ -996,10 +1059,12 @@
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
 		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").show(1000);
 		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#ST").is(":selected")) {
+        		$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
         		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
 				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
@@ -1009,10 +1074,27 @@
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
 		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
 		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").show(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
+		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
+        }
+
+        if($("#TR").is(":selected")) {
+        		$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
+				$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
+				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
+		      	$("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10, #DI11, #DI12, #DI13, #DI14, #DI15, #DI16, #DI17, #DI18, #DI19, #DI20").hide(1000);
+		        $("#EC0, #EC1, #EC2, #EC3, #EC4, #EC5, #EC6, #EC7, #EC8, #EC9, #EC10, #EC11").hide(1000);
+		        $("#FI0, #FI1, #FI2, #FI3, #FI4, #FI5, #FI6, #FI7, #FI8, #FI9, #FI10, #FI11").hide(1000);
+		        $("#FE1, #FE2, #FE3, #FE4, #FE5, #FE6, #FE7, #FE8, #FE9, #FE10").hide(1000);
+		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
+		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
+		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").show(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").hide(2000);
         }
 
         if($("#N").is(":selected")) {
+        		$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
         		$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").hide(1000);
 				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").hide(1000);
 		        $("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").hide(1000);
@@ -1022,11 +1104,13 @@
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").hide(1000);
 		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").hide(1000);
 		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").show(2000);
         }
 
         if($("#ALL").is(":selected")) {
             	alert("LOADING THIS BITCH, HOLD ON.");
+            	$("#AU0, #AU1, #AU2, #AU3, #AU4, #AU5, #AU6, #AU7, #AU8, #AU9, #AU10").hide(1000);
             	$("#BO1, #BO2, #BO3, #BO4, #BO5, #BO6, #BO7, #BO8, #BO9, #BO10").show(1000);
 				$("#CC1, #CC2, #CC3, #CC4, #CC5, #CC6, #CC7, #CC8, #CC9, #CC10").show(1000);
             	$("#DI1, #DI2, #DI3, #DI4, #DI5, #DI6, #DI7, #DI8, #DI9, #DI10").show(1000);
@@ -1036,6 +1120,7 @@
 		        $("#FU1, #FU2, #FU3, #FU4, #FU5, #FU6, #FU7, #FU8, #FU9, #FU10").show(1000);
 		        $("#OP1, #OP2, #OP3, #OP4, #OP5, #OP6, #OP7, #OP8, #OP9, #OP10, #OP11, #OP12, #OP13, #OP14, #OP15, #OP16, #OP17, #OP18, #OP19, #OP20, #OP21, #OP22, #OP23, #OP24").show(1000);
 		        $("#ST0, #ST1, #ST2, #ST3, #ST4, #ST5, #ST6, #ST7, #ST8, #ST9, #ST10, #ST11, #ST12, #ST13, #ST14, #ST15, #ST16, #ST17, #ST18").hide(1000);
+		        $("#TR0, #TR1, #TR2, #TR3, #TR4, #TR5, #TR6, #TR7, #TR8, #TR9, #TR10, #TR11").hide(1000);
 		        $("#note1, #note2, #note3, #note4, #note5, #note6, #note7, #note8, #note9, #note10").show(2000);
         }
  
