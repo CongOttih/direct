@@ -3,10 +3,11 @@
 }
 
 html{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #FFF;
   color: transparent;
-
+  font-weight: 5;
+  letter-spacing: 2px;
   height: 75%;
   width: 100%;
   animation-name: progress;
