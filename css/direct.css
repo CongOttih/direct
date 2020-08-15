@@ -60,6 +60,9 @@ body{
   visibility: hidden;
 }
 
+.wide-column {
+  width: 100%;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -67,6 +70,7 @@ body{
   display: table;
   clear: both;
 }
+
 /* Style the buttons */
 .btn {
   border: none;
