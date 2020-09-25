@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Acme">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gamemanager.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemy.js"></script>
+  </head>
+  <body>
+
+    <div class="header">
+      <p>Play the most possibly dumbest RPG ever to be made!</p>
+      <h2>Choose your character!</h2>
+    </div>
+
+    <div class="interface">
+      <a href="#" onclick="GameManager.setGameStart('Blueberry')">
+        <img src="img/avatar-player/blueberry.png" alt="blueberry">
+        <div>
+          <h3>Blueberry</h3>
+          <p>Blueberries have higher health and stamina, however strength also makes them slower and clumsier.</p>
+        </div>
+      </a>
+      <a href="#" onclick="GameManager.setGameStart('Cherry')">
+        <img src="img/avatar-player/cherry.png" alt="cherry">
+        <div>
+          <h3>Cherry</h3>
+          <p>Cherries are fast and have high stamina and speed which makes up for their lack in strength and health.</p>
+        </div>
+      </a>
+      <a href="#" onclick="GameManager.setGameStart('Grape')">
+        <img src="img/avatar-player/grape.png" alt="grape">
+        <div>
+          <h3>Grape</h3>
+          <p>Grapes are glass canons which puts all their effort into spells. This means they slack on everything else.</p>
+        </div>
+      </a>
+      <a href="#" onclick="GameManager.setGameStart('Strawberry')">
+        <img src="img/avatar-player/strawberry.png" alt="strawberry">
+        <div>
+          <h3>Strawberry</h3>
+          <p>Strawberries are well rounded fighters that focus on evening out their skills. No strengths or weaknesses.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="actions">
+
+    </div>
+
+    <div class="arena">
+
+    </div>
+
+    <div class="enemy">
+
+    </div>
+
+  </body>
+</html>
