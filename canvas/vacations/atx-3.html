@@ -82,7 +82,16 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
 }
 
 .grid .grid-item {
-  width: 75%;
+  width: 50%;
+  display: inline-block;
+  padding: 16px;
+  opacity: .75;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.grid .grid-item-more {
+  width: 100%;
   display: inline-block;
   padding: 16px;
   opacity: .75;
@@ -95,11 +104,19 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
 .lightbox img {
   height: 50%;
 }
-.grid .grid-item { width: 100%; }
+.grid .grid-item { width: 50%; }
+
+.grid .grid-item-more {
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 480px) {
-.grid .grid-item { width: 100%; }
+.grid .grid-item { width: 50%; }
+
+.grid .grid-item-more {
+  width: 100%;
+}
 }
 
 .grid img {
@@ -163,7 +180,7 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
 
   <label for="pic-30" class="grid-item"><img src="img/30tn.jpg" width="100%" height="100%"></label>
 
-  <label for="pic-31" class="grid-item"><a href="atx-3.html"><img src="img/more.png" width="100%" height="100%"></a></label>
+  <label for="pic-31" class="grid-item-more"><a href="atx-4.html"><img src="img/more.png" width="100%" height="100%"></a></label>
 
 </div>
 <script>
