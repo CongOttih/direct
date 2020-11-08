@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATX</title>
+<!--<link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css" rel="stylesheet" type="text/css">-->
+<link rel="icon" type="image/png" href="img/key.png">
+<style>
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+label[for] { cursor: pointer; }
+
+input[type="checkbox"] { display: none; }
+
+body { background-color: #000; }
+
+.lightbox {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  z-index: 1;
+  overflow: auto;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform .75s ease-out;
+  transition: transform .75s ease-out;
+}
+
+.lightbox img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 96%;
+  max-height: 96%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+input[type="checkbox"]:checked + .lightbox {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+input[type="checkbox"]:checked ~ .grid { opacity: .125; }
+
+.grid {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #000;
+  z-index: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  padding: 16px;
+  overflow: auto;
+  text-align: center;
+  -webkit-transition: opacity .75s;
+  transition: opacity .75s;
+}
+
+.grid .grid-item {
+  width: 50%;
+  display: inline-block;
+  padding: 16px;
+  opacity: .75;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.grid .grid-item-more {
+  width: 100%;
+  display: inline-block;
+  padding: 16px;
+  opacity: .75;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.grid .grid-item:hover { opacity: 1; }
+@media screen and (max-width: 1024px) {
+.lightbox img {
+  height: 50%;
+}
+.grid .grid-item { width: 50%; }
+
+.grid .grid-item-more {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 480px) {
+.grid .grid-item { width: 50%; }
+
+.grid .grid-item-more {
+  width: 100%;
+}
+}
+
+.grid img {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+</style>
+</head>
+
+<body>
+<input type="checkbox" id="pic-51"/>
+<label for="pic-51" class="lightbox"><img src="img/51.png"></label>
+
+<input type="checkbox" id="pic-52"/>
+<label for="pic-52" class="lightbox"><img src="img/52.png"></label>
+
+<input type="checkbox" id="pic-53"/>
+<label for="pic-53" class="lightbox"><img src="img/53.png"></label>
+
+<input type="checkbox" id="pic-54"/>
+<label for="pic-54" class="lightbox"><img src="img/54.png"></label>
+
+<input type="checkbox" id="pic-55"/>
+<label for="pic-55" class="lightbox"><img src="img/55.png"></label>
+
+<input type="checkbox" id="pic-56"/>
+<label for="pic-56" class="lightbox"><img src="img/56.png"></label>
+
+<input type="checkbox" id="pic-57"/>
+<label for="pic-57" class="lightbox"><img src="img/57.png"></label>
+
+<input type="checkbox" id="pic-58"/>
+<label for="pic-58" class="lightbox"><img src="img/58.png"></label>
+
+<input type="checkbox" id="pic-59"/>
+<label for="pic-59" class="lightbox"><img src="img/59.png"></label>
+
+<input type="checkbox" id="pic-60"/>
+<label for="pic-60" class="lightbox"><img src="img/60.png"></label>
+
+<div class="grid">
+  <label for="pic-51" class="grid-item"><img src="img/51tn.jpg" width="100%" height="100%"></label>
+
+  <label for="pic-52" class="grid-item"><img src="img/52tn.jpg" width="100%" height="100%"></label>
+
+  <label for="pic-53" class="grid-item"><img src="img/53tn.jpg" width="100%" height="100%"></label>
+
+  <label for="pic-54" class="grid-item"><img src="img/54tn.jpg" width="100%" height="100%"></label>
+
+  <label for="pic-55" class="grid-item"><img src="img/55tn.jpg" width="100%" height="100%"></label>
+
+  <label for="pic-56" class="grid-item"><img src="img/56tn.jpg" width="100%" height="100%"></label>
+
+  <label for="pic-57" class="grid-item"><img src="img/57tn.jpg" width="100%" height="100%"></label>
+
+  <label for="pic-58" class="grid-item"><img src="img/58tn.jpg" width="100%" height="100%"></label>
+
+  <label for="pic-59" class="grid-item"><img src="img/59tn.jpg" width="100%" height="100%"></label>
+
+  <label for="pic-60" class="grid-item"><img src="img/60tn.jpg" width="100%" height="100%"></label>
+
+  <label for="pic-61" class="grid-item-more"><a href="atx-8.html"><img src="img/more.png" width="100%" height="100%"></a></label>
+
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>
