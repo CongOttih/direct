@@ -35,7 +35,7 @@ body { background-color: #000; }
 }
 
 .lightbox img {
-  height: 50%;
+  height: auto;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -102,9 +102,7 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
 
 .grid .grid-item:hover { opacity: 1; }
 @media screen and (max-width: 1024px) {
-.lightbox img {
-  height: 50%;
-}
+.lightbox img {height: auto;}
 .grid .grid-item { width: 50%; }
 
 .grid .grid-item-more {
@@ -114,8 +112,7 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
 
 @media screen and (max-width: 480px) {
 .grid .grid-item { width: 50%; }
-.lightbox img {width: 250px;
-}
+.lightbox img {height: auto;}
 .grid .grid-item-more {
   width: 100%;
 }
